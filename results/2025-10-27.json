@@ -1,5 +1,11 @@
 {
   "date": "2025-10-27",
   "bullish": [],
-  "bearish": []
+  "bearish": [],
+  "meta": {
+    "provider": "polygon",
+    "today": "2025-10-27",
+    "prev": null,
+    "note": "Sin datos de hoy: puede ser demasiado temprano o feriado en US."
+  }
 }
