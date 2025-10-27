@@ -3,9 +3,12 @@
   "bullish": [],
   "bearish": [],
   "meta": {
-    "provider": "polygon",
-    "today": "2025-10-27",
-    "prev": null,
-    "note": "Sin datos de hoy: puede ser demasiado temprano o feriado en US."
+    "provider": "twelvedata",
+    "ny_date": "2025-10-27",
+    "universe_size": 346,
+    "checked_with_0930": 0,
+    "skipped_too_early": 12,
+    "errors": 0,
+    "note": "Detección en apertura con Twelve Data. Se requiere que la vela 09:30 esté disponible; si no, el ticker se marca como 'too early'."
   }
 }
