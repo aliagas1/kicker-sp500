@@ -15,7 +15,7 @@ OPEN_TIME = "09:30:00"               # apertura oficial NYSE/NASDAQ
 
 REQUEST_SLEEP = 0.1                  # pausa suave entre requests
 INTRADAY_INTERVAL = "1min"           # granularidad para hoy
-INTRADAY_OUTPUTSIZE = 40             # velas recientes de 1 min (~40 min)
+INTRADAY_OUTPUTSIZE = 500             # velas recientes de 1 min (~40 min)
 
 # ===================================================
 
