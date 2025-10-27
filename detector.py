@@ -41,8 +41,50 @@ def load_universe(path):
     df = pd.read_csv(path)
     return [t.strip() for t in df["ticker"].dropna().tolist()]
 
-def fetch_history(ticker, period="2mo"):
-    return yf.Ticker(ticker).history(period=period, interval="1d", auto_adjust=False)
+def fetch_history(ticker):
+    """
+    Descarga las últimas 30 velas diarias del ticker desde Finnhub.
+    Usa la API key guardada en los secretos de GitHub Actions.
+    """
+    import requests
+    import pandas as pd
+    import os
+    import time
+
+    # Obtiene la API key del secreto del repositorio
+    API_KEY = os.getenv("FINNHUB_API_KEY")
+
+    if not API_KEY:
+        print("⚠️ No se encontró FINNHUB_API_KEY en variables de entorno.")
+        return pd.DataFrame()
+
+    url = f"https://finnhub.io/api/v1/stock/candle?symbol={ticker}&resolution=D&count=30&token={API_KEY}"
+    
+    try:
+        r = requests.get(url)
+        data = r.json()
+
+        # Si Finnhub devuelve 's': 'no_data', significa que ese ticker no tiene información
+        if data.get("s") != "ok":
+            print(f"[{ticker}] sin datos válidos o no cotiza en Finnhub")
+            return pd.DataFrame()
+
+        df = pd.DataFrame({
+            "Open": data["o"],
+            "High": data["h"],
+            "Low": data["l"],
+            "Close": data["c"],
+            "Volume": data["v"]
+        }, index=pd.to_datetime(data["t"], unit="s"))
+
+        # Pequeña pausa para no exceder el límite gratuito (60 consultas/minuto)
+        time.sleep(0.2)
+
+        return df
+
+    except Exception as e:
+        print(f"[{ticker}] error al obtener datos: {e}")
+        return pd.DataFrame()
 
 def detect_kicker(df):
     if len(df) < VOL_WINDOW + 2: return None
