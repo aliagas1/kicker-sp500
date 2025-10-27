@@ -23,7 +23,7 @@ jobs:
 
       - name: Ejecutar detector
         env:
-          POLYGON_API_KEY: ${{ secrets.POLYGON_API_KEY }}
+          TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}
         run: python detector.py
 
       - name: Commit y push de results
