@@ -22,6 +22,8 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: Ejecutar detector
+        env:
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
         run: python detector.py
 
       - name: Commit y push de results
