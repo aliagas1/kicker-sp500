@@ -23,7 +23,7 @@ jobs:
 
       - name: Ejecutar detector
         env:
-          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+          POLYGON_API_KEY: ${{ secrets.POLYGON_API_KEY }}
         run: python detector.py
 
       - name: Commit y push de results
