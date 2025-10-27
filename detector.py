@@ -1,4 +1,4 @@
-# detector.py — versión Polygon (endpoint agrupado), orientada a apertura
+# detector.py — Twelve Data (detección en apertura)
 import os, json, time
 from datetime import datetime, timedelta, date
 from dateutil import tz
@@ -9,92 +9,137 @@ import requests
 UNIVERSE_CSV = "universe.csv"
 SAVE_DIR = "results"
 
-# Zona horaria de referencia para fecha "hoy" (Lima, por el uso de tu padre)
-LOCAL_TZ = "America/Lima"
+LOCAL_TZ = "America/Lima"            # zona de referencia usuario final
+NY_TZ    = "America/New_York"        # mercado US
+OPEN_TIME = "09:30:00"               # apertura oficial NYSE/NASDAQ
 
-# Ejecutamos a las 08:40 Lima (9:40 NY) para dar tiempo a que Polygon publique el 'open'
-TARGET_HOUR = 8
-TARGET_MINUTE = 40
+REQUEST_SLEEP = 0.1                  # pausa suave entre requests
+INTRADAY_INTERVAL = "1min"           # granularidad para hoy
+INTRADAY_OUTPUTSIZE = 40             # velas recientes de 1 min (~40 min)
 
-# Filtro de volumen desactivado (no inventamos medias sin pedir más datos)
-CHECK_VOLUME = False
-
-# Pausa corta para no golpear la API (plan free)
-REQUEST_SLEEP = 0.2
 # ===================================================
-
 
 def ensure_dirs():
     os.makedirs(SAVE_DIR, exist_ok=True)
 
-
 def load_universe(path: str) -> pd.DataFrame:
-    """
-    Carga tickers del S&P500 desde universe.csv.
-    Normaliza a formato Polygon (reemplaza '-' por '.') p.ej. BRK-B -> BRK.B
-    """
     df = pd.read_csv(path)
     df = df.dropna(subset=["ticker"])
-    df["ticker_norm"] = df["ticker"].astype(str).str.strip().str.replace("-", ".", regex=False)
+    # Twelve Data usa BRK.B, BF.B, etc.
+    df["ticker_td"] = df["ticker"].astype(str).str.strip().str.replace("-", ".", regex=False)
     return df
 
-
 def ny_today() -> date:
-    """Fecha de hoy según NY (alineado con sesión US)."""
-    now_ny = datetime.now(tz.gettz("America/New_York"))
-    return now_ny.date()
+    return datetime.now(tz.gettz(NY_TZ)).date()
 
-
-def fetch_grouped_for(day: date, api_key: str) -> pd.DataFrame:
+def td_time_series(symbol: str, interval: str, outputsize: int, api_key: str):
     """
-    Llama a /v2/aggs/grouped/locale/us/market/stocks/{date}
-    Devuelve DataFrame con columnas: T,o,h,l,c,v y Date.
+    Llama a /time_series de Twelve Data y devuelve dict JSON.
     """
-    date_str = day.isoformat()
-    url = f"https://api.polygon.io/v2/aggs/grouped/locale/us/market/stocks/{date_str}?adjusted=true&apiKey={api_key}"
+    url = (
+        "https://api.twelvedata.com/time_series"
+        f"?symbol={symbol}&interval={interval}&outputsize={outputsize}&timezone={NY_TZ.replace('/', '%2F')}"
+        f"&apikey={api_key}"
+    )
     r = requests.get(url, timeout=20)
     data = r.json()
-    if "results" not in data:
-        # Puede no haber datos si es fin de semana/feriado o muy temprano
-        return pd.DataFrame()
-    df = pd.DataFrame(data["results"])
-    if df.empty:
-        return df
-    # Renombrar a OHLCV estándar
-    rename = {"T": "Ticker", "o": "Open", "h": "High", "l": "Low", "c": "Close", "v": "Volume", "t": "Timestamp"}
-    df = df.rename(columns=rename)
-    # Polygon entrega Ticker en formato como BRK.B (ya es el que queremos)
-    # Fecha del agregado
-    df["Date"] = pd.to_datetime(df["Timestamp"], unit="ms").dt.date
     time.sleep(REQUEST_SLEEP)
-    return df[["Ticker", "Open", "High", "Low", "Close", "Volume", "Date"]]
+    return data
 
-
-def find_prev_trading_day(reference: date, api_key: str, max_lookback: int = 7) -> date | None:
+def get_prev_daily(symbol: str, api_key: str):
     """
-    Busca el último día con datos (hábil de mercado) hacia atrás.
-    No depende de calendarios locales: intenta hasta 7 días hábiles atrás.
+    Obtiene OHLC del día hábil anterior usando interval=1day, outputsize=3 y toma la fila de 'ayer'.
     """
-    d = reference - timedelta(days=1)
-    for _ in range(max_lookback):
-        df = fetch_grouped_for(d, api_key)
-        if not df.empty:
-            return d
-        d -= timedelta(days=1)
-    return None
+    data = td_time_series(symbol, "1day", 3, api_key)
+    if data.get("status") != "ok" or "values" not in data:
+        return None
+    vals = data["values"]
+    # values vienen en orden descendente (más reciente primero). Buscamos la fecha de 'ayer' NY
+    today_ny = ny_today()
+    yesterday_ny = today_ny - timedelta(days=1)
+    # en fines de semana/feriados, ayer puede no existir; buscamos la más reciente < today
+    prev_row = None
+    for v in vals:
+        d = v.get("datetime", "")[:10]
+        try:
+            d_date = datetime.strptime(d, "%Y-%m-%d").date()
+        except:
+            continue
+        if d_date < today_ny:
+            prev_row = v
+            break
+    if not prev_row:
+        return None
+    try:
+        return {
+            "Open":  float(prev_row["open"]),
+            "High":  float(prev_row["high"]),
+            "Low":   float(prev_row["low"]),
+            "Close": float(prev_row["close"]),
+            "Date":  prev_row["datetime"][:10],
+        }
+    except:
+        return None
 
-
-def detect_kicker(prev_row: pd.Series, today_row: pd.Series) -> str | None:
+def get_today_open_and_latest(symbol: str, api_key: str):
     """
-    Regla operativa de Kicker (sin volumen):
-    - Alcista: ayer cuerpo bajista (Cprev < Oprev), gap hoy: Open_today > High_prev, y C_today > O_today
-    - Bajista: ayer cuerpo alcista (Cprev > Oprev), gap hoy: Open_today < Low_prev, y C_today < O_today
+    Obtiene:
+      - La vela exacta de las 09:30:00 (apertura oficial).
+      - La última vela disponible del día (para comparar Close vs Open).
+    Si aun no existe la vela 09:30, devuelve None (demasiado temprano).
     """
-    Oprev, Hprev, Lprev, Cprev = prev_row["Open"], prev_row["High"], prev_row["Low"], prev_row["Close"]
-    Ot, Ht, Lt, Ct = today_row["Open"], today_row["High"], today_row["Low"], today_row["Close"]
+    data = td_time_series(symbol, INTRADAY_INTERVAL, INTRADAY_OUTPUTSIZE, api_key)
+    if data.get("status") != "ok" or "values" not in data:
+        return None
+    vals = data["values"]
+    if not vals:
+        return None
 
-    bullish = (Cprev < Oprev) and (Ot > Hprev) and (Ct > Ot)
-    bearish = (Cprev > Oprev) and (Ot < Lprev) and (Ct < Ot)
+    # values vienen en orden descendente por datetime (más reciente primero)
+    today_str = ny_today().isoformat()
+    open_bar = None
+    latest_bar = None
+
+    for idx, v in enumerate(vals):
+        dt = v.get("datetime", "")
+        if len(dt) < 19:  # "YYYY-MM-DD HH:MM:SS"
+            continue
+        d = dt[:10]
+        t = dt[11:19]
+        # última vela disponible del día de hoy
+        if d == today_str and latest_bar is None:
+            latest_bar = v
+        # buscamos exactamente la vela 09:30:00 del día de hoy
+        if d == today_str and t == OPEN_TIME:
+            open_bar = v
+
+    if open_bar is None:
+        # aún no hay vela 09:30 consolidada
+        return None
+
+    try:
+        open_today = float(open_bar["open"])
+        latest_close_today = float(latest_bar["close"]) if latest_bar else None
+        return {
+            "Open": open_today,
+            "Close": latest_close_today,
+            "OpenBarTime": open_bar["datetime"],
+            "LatestBarTime": latest_bar["datetime"] if latest_bar else None
+        }
+    except:
+        return None
+
+def detect_kicker(prev: dict, today: dict) -> str | None:
+    """
+    Kicker puro:
+    - Bullish: Cprev < Oprev, y Open_today > High_prev, y Close_today > Open_today
+    - Bearish: Cprev > Oprev, y Open_today < Low_prev,  y Close_today < Open_today
+    """
+    Oprev, Hprev, Lprev, Cprev = prev["Open"], prev["High"], prev["Low"], prev["Close"]
+    Ot, Ct = today["Open"], today["Close"]
+
+    bullish = (Cprev < Oprev) and (Ot > Hprev) and (Ct is not None and Ct > Ot)
+    bearish = (Cprev > Oprev) and (Ot < Lprev) and (Ct is not None and Ct < Ot)
 
     if bullish:
         return "bullish"
@@ -102,135 +147,71 @@ def detect_kicker(prev_row: pd.Series, today_row: pd.Series) -> str | None:
         return "bearish"
     return None
 
-
 def main():
     ensure_dirs()
 
-    # API key de Polygon desde variable de entorno (pasada por Actions)
-    API_KEY = os.getenv("POLYGON_API_KEY")
+    API_KEY = os.getenv("TWELVEDATA_API_KEY")
     if not API_KEY:
-        print("⚠️ Falta POLYGON_API_KEY en variables de entorno.")
+        print("⚠️ Falta TWELVEDATA_API_KEY en variables de entorno.")
         return
 
-    # Fecha de hoy (NY) y verificación de hora local (opcional)
-    today_local = datetime.now(tz.gettz(LOCAL_TZ))
-    today_str = today_local.date().isoformat()
+    now_local = datetime.now(tz.gettz(LOCAL_TZ))
+    today_str_local = now_local.date().isoformat()
 
-    # Cargamos universo y normalizamos al formato Polygon (BRK-B -> BRK.B)
     universe = load_universe(UNIVERSE_CSV)
-    tickers_set = set(universe["ticker_norm"].tolist())
-
-    # 1) Descargamos el agregado "HOY" (debe existir tras apertura + ~10 min)
-    today_ny = ny_today()
-    df_today = fetch_grouped_for(today_ny, API_KEY)
-
-    # Si aún no hay datos de hoy (muy temprano o feriado), salimos con JSON vacío
-    if df_today.empty:
-        out = {
-            "date": today_str,
-            "bullish": [],
-            "bearish": [],
-            "meta": {
-                "provider": "polygon",
-                "today": today_ny.isoformat(),
-                "prev": None,
-                "note": "Sin datos de hoy: puede ser demasiado temprano o feriado en US."
-            }
-        }
-        out_path = os.path.join(SAVE_DIR, f"{today_str}.json")
-        with open(out_path, "w") as f:
-            json.dump(out, f, indent=2, ensure_ascii=False)
-        print(f"Guardado: {out_path}")
-        print("Sin datos de hoy todavía. Revisa la hora o el calendario de mercado.")
-        return
-
-    # 2) Buscamos el día hábil anterior con datos
-    prev_day = find_prev_trading_day(today_ny, API_KEY)
-    if prev_day is None:
-        out = {
-            "date": today_str,
-            "bullish": [],
-            "bearish": [],
-            "meta": {
-                "provider": "polygon",
-                "today": today_ny.isoformat(),
-                "prev": None,
-                "note": "No se encontró día hábil previo con datos (últimos 7 días)."
-            }
-        }
-        out_path = os.path.join(SAVE_DIR, f"{today_str}.json")
-        with open(out_path, "w") as f:
-            json.dump(out, f, indent=2, ensure_ascii=False)
-        print(f"Guardado: {out_path}")
-        return
-
-    df_prev = fetch_grouped_for(prev_day, API_KEY)
-    if df_prev.empty:
-        # Caso raro: find_prev_trading_day dijo que había datos, pero aquí no
-        out = {
-            "date": today_str,
-            "bullish": [],
-            "bearish": [],
-            "meta": {
-                "provider": "polygon",
-                "today": today_ny.isoformat(),
-                "prev": prev_day.isoformat(),
-                "note": "No se pudieron cargar datos del día previo."
-            }
-        }
-        out_path = os.path.join(SAVE_DIR, f"{today_str}.json")
-        with open(out_path, "w") as f:
-            json.dump(out, f, indent=2, ensure_ascii=False)
-        print(f"Guardado: {out_path}")
-        return
-
-    # 3) Filtramos solo tickers del universo
-    # Polygon devuelve miles de símbolos US. Tomamos intersección con nuestro universo.
-    df_today = df_today[df_today["Ticker"].isin(tickers_set)].copy()
-    df_prev = df_prev[df_prev["Ticker"].isin(tickers_set)].copy()
-
-    # Creamos diccionarios para lookup rápido por ticker
-    today_map = {row["Ticker"]: row for _, row in df_today.iterrows()}
-    prev_map = {row["Ticker"]: row for _, row in df_prev.iterrows()}
+    tickers = universe["ticker_td"].tolist()
 
     bullish_list, bearish_list = [], []
+    checked = 0
+    too_early = 0
+    errors = 0
 
-    # 4) Evaluamos regla de Kicker para cada ticker presente en ambos días
-    common = sorted(set(today_map.keys()) & set(prev_map.keys()))
-    for sym in common:
-        sig = detect_kicker(prev_map[sym], today_map[sym])
-        if sig == "bullish":
-            bullish_list.append(sym)
-        elif sig == "bearish":
-            bearish_list.append(sym)
+    for t in tickers:
+        try:
+            prev = get_prev_daily(t, API_KEY)
+            if not prev:
+                continue
+            today_intraday = get_today_open_and_latest(t, API_KEY)
+            if not today_intraday:
+                too_early += 1
+                continue
 
-    # 5) Guardamos salida
+            sig = detect_kicker(prev, today_intraday)
+            if sig == "bullish":
+                bullish_list.append(t)
+            elif sig == "bearish":
+                bearish_list.append(t)
+            checked += 1
+        except Exception as e:
+            errors += 1
+            print(f"[{t}] error: {e}")
+
     out = {
-        "date": today_str,
+        "date": today_str_local,
         "bullish": bullish_list,
         "bearish": bearish_list,
         "meta": {
-            "provider": "polygon",
-            "today": today_ny.isoformat(),
-            "prev": prev_day.isoformat(),
-            "universe_size": len(tickers_set),
-            "checked": len(common),
-            "note": "Detección en apertura (datos agrupados por día desde Polygon)."
+            "provider": "twelvedata",
+            "ny_date": ny_today().isoformat(),
+            "universe_size": len(tickers),
+            "checked_with_0930": checked,
+            "skipped_too_early": too_early,
+            "errors": errors,
+            "note": (
+                "Detección en apertura con Twelve Data. "
+                "Se requiere que la vela 09:30 esté disponible; si no, el ticker se marca como 'too early'."
+            )
         }
     }
-    out_path = os.path.join(SAVE_DIR, f"{today_str}.json")
+
+    out_path = os.path.join(SAVE_DIR, f"{today_str_local}.json")
     with open(out_path, "w") as f:
         json.dump(out, f, indent=2, ensure_ascii=False)
 
     print(f"Guardado: {out_path}")
-    print(f"Vela Kicker — {today_str}")
-    print(f"Alcistas: {len(bullish_list)}")
-    print(f"Bajistas: {len(bearish_list)}")
-    if bullish_list:
-        print("Alcistas:", ", ".join(bullish_list[:20]))
-    if bearish_list:
-        print("Bajistas:", ", ".join(bearish_list[:20]))
-
+    print(f"Vela Kicker — {today_str_local}")
+    print(f"Alcistas: {len(bullish_list)}  |  Bajistas: {len(bearish_list)}")
+    print(f"Tickers evaluados (con 09:30 disponible): {checked} / {len(tickers)}  |  Too early: {too_early}")
 
 if __name__ == "__main__":
     main()
