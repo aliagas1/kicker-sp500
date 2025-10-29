@@ -1,0 +1,14 @@
+{
+  "date": "2025-10-29",
+  "bullish": [],
+  "bearish": [],
+  "meta": {
+    "provider": "twelvedata",
+    "ny_date": "2025-10-29",
+    "universe_size": 346,
+    "checked_with_0930": 8,
+    "skipped_too_early": 0,
+    "errors": 0,
+    "note": "Detección en apertura con Twelve Data. Se requiere que la vela 09:30 esté disponible; si no, el ticker se marca como 'too early'."
+  }
+}
