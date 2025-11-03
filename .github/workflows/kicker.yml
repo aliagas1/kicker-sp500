@@ -3,7 +3,7 @@ name: Kicker Daily
 on:
   schedule:
     # 13:40 UTC = 08:40 Lima
-    - cron: "40 13 * * 1-5"
+    - cron: "40 13 * * *"
   workflow_dispatch: {}
 
 permissions:
