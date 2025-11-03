@@ -1,4 +1,4 @@
-# detector.py — Twelve Data (detección en apertura)
+# detector.py — Twelve Data (detección en pre-market profesional)
 import os, json, time
 from datetime import datetime, timedelta, date
 from dateutil import tz
@@ -12,10 +12,11 @@ SAVE_DIR = "results"
 LOCAL_TZ = "America/Lima"            # zona de referencia usuario final
 NY_TZ    = "America/New_York"        # mercado US
 OPEN_TIME = "09:30:00"               # apertura oficial NYSE/NASDAQ
+PREMARKET_LAST = "09:29:00"          # última vela de pre-market NY
 
 REQUEST_SLEEP = 0.1                  # pausa suave entre requests
 INTRADAY_INTERVAL = "1min"           # granularidad para hoy
-INTRADAY_OUTPUTSIZE = 500             # velas recientes de 1 min (~40 min)
+INTRADAY_OUTPUTSIZE = 1000           # velas recientes (~16 h)
 
 # ===================================================
 
@@ -25,7 +26,6 @@ def ensure_dirs():
 def load_universe(path: str) -> pd.DataFrame:
     df = pd.read_csv(path)
     df = df.dropna(subset=["ticker"])
-    # Twelve Data usa BRK.B, BF.B, etc.
     df["ticker_td"] = df["ticker"].astype(str).str.strip().str.replace("-", ".", regex=False)
     return df
 
@@ -33,9 +33,6 @@ def ny_today() -> date:
     return datetime.now(tz.gettz(NY_TZ)).date()
 
 def td_time_series(symbol: str, interval: str, outputsize: int, api_key: str):
-    """
-    Llama a /time_series de Twelve Data y devuelve dict JSON.
-    """
     url = (
         "https://api.twelvedata.com/time_series"
         f"?symbol={symbol}&interval={interval}&outputsize={outputsize}&timezone={NY_TZ.replace('/', '%2F')}"
@@ -47,17 +44,11 @@ def td_time_series(symbol: str, interval: str, outputsize: int, api_key: str):
     return data
 
 def get_prev_daily(symbol: str, api_key: str):
-    """
-    Obtiene OHLC del día hábil anterior usando interval=1day, outputsize=3 y toma la fila de 'ayer'.
-    """
     data = td_time_series(symbol, "1day", 3, api_key)
     if data.get("status") != "ok" or "values" not in data:
         return None
     vals = data["values"]
-    # values vienen en orden descendente (más reciente primero). Buscamos la fecha de 'ayer' NY
     today_ny = ny_today()
-    yesterday_ny = today_ny - timedelta(days=1)
-    # en fines de semana/feriados, ayer puede no existir; buscamos la más reciente < today
     prev_row = None
     for v in vals:
         d = v.get("datetime", "")[:10]
@@ -81,12 +72,9 @@ def get_prev_daily(symbol: str, api_key: str):
     except:
         return None
 
-def get_today_open_and_latest(symbol: str, api_key: str):
+def get_premarket_last(symbol: str, api_key: str):
     """
-    Obtiene:
-      - La vela exacta de las 09:30:00 (apertura oficial).
-      - La última vela disponible del día (para comparar Close vs Open).
-    Si aun no existe la vela 09:30, devuelve None (demasiado temprano).
+    Obtiene la última vela del pre-market (<= 09:29 NY)
     """
     data = td_time_series(symbol, INTRADAY_INTERVAL, INTRADAY_OUTPUTSIZE, api_key)
     if data.get("status") != "ok" or "values" not in data:
@@ -95,55 +83,52 @@ def get_today_open_and_latest(symbol: str, api_key: str):
     if not vals:
         return None
 
-    # values vienen en orden descendente por datetime (más reciente primero)
     today_str = ny_today().isoformat()
-    open_bar = None
-    latest_bar = None
+    premarket_last = None
 
-    for idx, v in enumerate(vals):
+    # values vienen en orden descendente (más reciente primero)
+    for v in vals:
         dt = v.get("datetime", "")
-        if len(dt) < 19:  # "YYYY-MM-DD HH:MM:SS"
+        if len(dt) < 19:
             continue
         d = dt[:10]
         t = dt[11:19]
-        # última vela disponible del día de hoy
-        if d == today_str and latest_bar is None:
-            latest_bar = v
-        # buscamos exactamente la vela 09:30:00 del día de hoy
-        if d == today_str and t == OPEN_TIME:
-            open_bar = v
+        if d == today_str and t <= PREMARKET_LAST:
+            premarket_last = v
+            break
 
-    if open_bar is None:
-        # aún no hay vela 09:30 consolidada
+    if not premarket_last:
         return None
 
     try:
-        open_today = float(open_bar["open"])
-        latest_close_today = float(latest_bar["close"]) if latest_bar else None
         return {
-            "Open": open_today,
-            "Close": latest_close_today,
-            "OpenBarTime": open_bar["datetime"],
-            "LatestBarTime": latest_bar["datetime"] if latest_bar else None
+            "Open": float(premarket_last["open"]),
+            "Close": float(premarket_last["close"]),
+            "Time": premarket_last["datetime"]
         }
     except:
         return None
 
-def detect_kicker(prev: dict, today: dict) -> str | None:
+def detect_kicker(prev: dict, premarket: dict) -> str | None:
     """
-    Kicker puro:
-    - Bullish: Cprev < Oprev, y Open_today > High_prev, y Close_today > Open_today
-    - Bearish: Cprev > Oprev, y Open_today < Low_prev,  y Close_today < Open_today
+    Kicker profesional:
+    - Bullish: gap alcista >= 0.5% y vela verde en pre-market
+    - Bearish: gap bajista >= 0.5% y vela roja en pre-market
     """
-    Oprev, Hprev, Lprev, Cprev = prev["Open"], prev["High"], prev["Low"], prev["Close"]
-    Ot, Ct = today["Open"], today["Close"]
+    if not prev or not premarket:
+        return None
 
-    bullish = (Cprev < Oprev) and (Ot > Hprev) and (Ct is not None and Ct > Ot)
-    bearish = (Cprev > Oprev) and (Ot < Lprev) and (Ct is not None and Ct < Ot)
+    prev_close = prev["Close"]
+    pre_open = premarket["Open"]
+    pre_close = premarket["Close"]
 
-    if bullish:
+    # cálculo de gaps
+    gap_up = (pre_open - prev_close) / prev_close
+    gap_down = (prev_close - pre_open) / prev_close
+
+    if gap_up >= 0.005 and pre_close > pre_open:
         return "bullish"
-    if bearish:
+    elif gap_down >= 0.005 and pre_close < pre_open:
         return "bearish"
     return None
 
@@ -171,12 +156,13 @@ def main():
             prev = get_prev_daily(t, API_KEY)
             if not prev:
                 continue
-            today_intraday = get_today_open_and_latest(t, API_KEY)
-            if not today_intraday:
+
+            premarket = get_premarket_last(t, API_KEY)
+            if not premarket:
                 too_early += 1
                 continue
 
-            sig = detect_kicker(prev, today_intraday)
+            sig = detect_kicker(prev, premarket)
             if sig == "bullish":
                 bullish_list.append(t)
             elif sig == "bearish":
@@ -194,12 +180,12 @@ def main():
             "provider": "twelvedata",
             "ny_date": ny_today().isoformat(),
             "universe_size": len(tickers),
-            "checked_with_0930": checked,
+            "checked_with_0929": checked,
             "skipped_too_early": too_early,
             "errors": errors,
             "note": (
-                "Detección en apertura con Twelve Data. "
-                "Se requiere que la vela 09:30 esté disponible; si no, el ticker se marca como 'too early'."
+                "Detección con cierre del día anterior y última vela del pre-market (≤09:29 NY). "
+                "Requiere datos de pre-market disponibles."
             )
         }
     }
@@ -211,7 +197,7 @@ def main():
     print(f"Guardado: {out_path}")
     print(f"Vela Kicker — {today_str_local}")
     print(f"Alcistas: {len(bullish_list)}  |  Bajistas: {len(bearish_list)}")
-    print(f"Tickers evaluados (con 09:30 disponible): {checked} / {len(tickers)}  |  Too early: {too_early}")
+    print(f"Tickers evaluados (con pre-market disponible): {checked} / {len(tickers)}  |  Too early: {too_early}")
 
 if __name__ == "__main__":
     main()
