@@ -1,0 +1,14 @@
+{
+  "date": "2025-11-12",
+  "bullish": [],
+  "bearish": [],
+  "meta": {
+    "provider": "twelvedata",
+    "ny_date": "2025-11-12",
+    "universe_size": 346,
+    "checked_with_0929": 0,
+    "skipped_too_early": 8,
+    "errors": 0,
+    "note": "Detección con cierre del día anterior y última vela del pre-market (≤09:29 NY). Requiere datos de pre-market disponibles."
+  }
+}
