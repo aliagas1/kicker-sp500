@@ -1,7 +1,7 @@
 # detector.py — Twelve Data (detección en pre-market profesional)
-# Guardará resultados por FECHA DE NUEVA YORK para evitar líos de husos.
+# Guardará resultados por FECHA DE NUEVA YORK y solicita PRE/POST (prepost=true).
 import os, json, time
-from datetime import datetime, timedelta, date
+from datetime import datetime, date
 from dateutil import tz
 import pandas as pd
 import requests
@@ -19,7 +19,7 @@ REQUEST_SLEEP = 0.1                  # Pausa suave entre requests
 INTRADAY_INTERVAL = "1min"           # Granularidad para hoy
 INTRADAY_OUTPUTSIZE = 1000           # Velas recientes (~16 h)
 
-MAX_RETRIES = 3                      # Reintentos por fallos transitorios de red/API
+MAX_RETRIES = 3                      # Reintentos por fallos transitorios
 RETRY_BACKOFF_SEC = 1.5              # Backoff exponencial
 # ===================================================
 
@@ -29,6 +29,7 @@ def ensure_dirs():
 def load_universe(path: str) -> pd.DataFrame:
     df = pd.read_csv(path)
     df = df.dropna(subset=["ticker"])
+    # Normaliza tickers para Twelve Data (ej. BRK.B)
     df["ticker_td"] = df["ticker"].astype(str).str.strip().str.replace("-", ".", regex=False)
     return df
 
@@ -42,30 +43,37 @@ def _safe_get(url: str, timeout: int = 20):
             r = requests.get(url, timeout=timeout)
             if r.status_code == 200:
                 return r
-            # Si no es 200, espera y reintenta
-            last_err = RuntimeError(f"HTTP {r.status_code}")
+            last_err = RuntimeError(f"HTTP {r.status_code}: {r.text[:200]}")
         except Exception as e:
             last_err = e
-        # backoff
         time.sleep(RETRY_BACKOFF_SEC ** attempt)
     raise last_err if last_err else RuntimeError("Unknown HTTP error")
 
-def td_time_series(symbol: str, interval: str, outputsize: int, api_key: str):
+def td_time_series(symbol: str, interval: str, outputsize: int, api_key: str, *, prepost: bool = False):
+    # IMPORTANT: prepost=true para incluir pre/post-market en intradía
+    tz_encoded = NY_TZ.replace("/", "%2F")
+    base = "https://api.twelvedata.com/time_series"
     url = (
-        "https://api.twelvedata.com/time_series"
-        f"?symbol={symbol}&interval={interval}&outputsize={outputsize}&timezone={NY_TZ.replace('/', '%2F')}"
-        f"&apikey={api_key}"
+        f"{base}?symbol={symbol}&interval={interval}&outputsize={outputsize}"
+        f"&timezone={tz_encoded}&apikey={api_key}"
     )
+    if prepost:
+        url += "&prepost=true"
     r = _safe_get(url, timeout=20)
     data = r.json()
     time.sleep(REQUEST_SLEEP)
     return data
 
 def get_prev_daily(symbol: str, api_key: str):
-    data = td_time_series(symbol, "1day", 3, api_key)
+    # Diario NO necesita prepost
+    data = td_time_series(symbol, "1day", 3, api_key, prepost=False)
     if data.get("status") != "ok" or "values" not in data:
-        return None
+        # Devuelve None y deja que diagnostics registren el error
+        return None, data.get("message") or data.get("code") or "unknown_daily_error"
     vals = data["values"]
+    if not vals:
+        return None, "empty_daily_values"
+
     today_ny = ny_today()
     prev_row = None
     for v in vals:
@@ -74,35 +82,37 @@ def get_prev_daily(symbol: str, api_key: str):
             d_date = datetime.strptime(d, "%Y-%m-%d").date()
         except:
             continue
-        # Queremos el ÚLTIMO día completo anterior al HOY de NY
+        # Tomamos el ÚLTIMO día completo anterior a HOY (NY)
         if d_date < today_ny:
             prev_row = v
             break
     if not prev_row:
-        return None
+        return None, "no_prev_before_today"
+
     try:
-        return {
+        return ({
             "Open":  float(prev_row["open"]),
             "High":  float(prev_row["high"]),
             "Low":   float(prev_row["low"]),
             "Close": float(prev_row["close"]),
             "Date":  prev_row["datetime"][:10],
-        }
-    except:
-        return None
+        }, None)
+    except Exception as e:
+        return None, f"daily_parse_error:{e}"
 
 def get_premarket_last(symbol: str, api_key: str):
     """
     Obtiene la última vela del pre-market del DÍA HOY NY.
     Prioriza EXACTAMENTE 09:29:00 NY. Si no existe, toma la mayor t <= 09:29:00
     y marca TooEarly=True para NO clasificar ese ticker hoy.
+    Requiere prepost=true para incluir velas de pre-market.
     """
-    data = td_time_series(symbol, INTRADAY_INTERVAL, INTRADAY_OUTPUTSIZE, api_key)
+    data = td_time_series(symbol, INTRADAY_INTERVAL, INTRADAY_OUTPUTSIZE, api_key, prepost=True)
     if data.get("status") != "ok" or "values" not in data:
-        return None
+        return None, data.get("message") or data.get("code") or "unknown_intraday_error"
     vals = data["values"]
     if not vals:
-        return None
+        return None, "empty_intraday_values"
 
     today_str = ny_today().isoformat()
     target = None
@@ -126,7 +136,7 @@ def get_premarket_last(symbol: str, api_key: str):
                 target = v
 
     if not target:
-        return None
+        return None, "no_premarket_found"
 
     try:
         out = {
@@ -135,15 +145,18 @@ def get_premarket_last(symbol: str, api_key: str):
             "Time": target["datetime"],
             "TooEarly": (not exact)
         }
-        return out
-    except:
-        return None
+        # Si no es 09:29 exacto, no clasificamos
+        if out["TooEarly"]:
+            return None, "premarket_not_exact_0929"
+        return out, None
+    except Exception as e:
+        return None, f"intraday_parse_error:{e}"
 
 def detect_kicker(prev: dict, premarket: dict) -> str | None:
     """
-    Kicker profesional (definición mínima, manteniendo tu lógica original):
-    - Bullish: gap alcista >= 0.5% y vela verde en pre-market
-    - Bearish: gap bajista >= 0.5% y vela roja en pre-market
+    Kicker mínimo:
+    - Bullish: gap alcista >= 0.5% y vela premarket verde
+    - Bearish: gap bajista >= 0.5% y vela premarket roja
     """
     if not prev or not premarket:
         return None
@@ -152,7 +165,6 @@ def detect_kicker(prev: dict, premarket: dict) -> str | None:
     pre_open = premarket["Open"]
     pre_close = premarket["Close"]
 
-    # cálculo de gaps
     gap_up = (pre_open - prev_close) / prev_close
     gap_down = (prev_close - pre_open) / prev_close
 
@@ -170,10 +182,8 @@ def main():
         print("⚠️ Falta TWELVEDATA_API_KEY en variables de entorno.")
         return
 
-    # FECHA DE REFERENCIA: SIEMPRE NY
     ny_date_str = ny_today().isoformat()
 
-    # Logs locales opcionales
     now_local = datetime.now(tz.gettz(LOCAL_TZ))
     today_str_local = now_local.date().isoformat()
 
@@ -188,24 +198,16 @@ def main():
 
     for t in tickers:
         try:
-            prev = get_prev_daily(t, API_KEY)
+            prev, daily_err = get_prev_daily(t, API_KEY)
             if not prev:
-                # sin daily previo útil, no se puede clasificar
-                diagnostics.append({"ticker": t, "signal": None, "reason": "no_prev_daily"})
+                diagnostics.append({"ticker": t, "signal": None, "reason": "no_prev_daily", "api_error": daily_err})
                 continue
 
-            premarket = get_premarket_last(t, API_KEY)
+            premarket, intraday_err = get_premarket_last(t, API_KEY)
             if not premarket:
-                too_early += 1
-                diagnostics.append({"ticker": t, "signal": None, "reason": "no_premarket_found"})
-                continue
-
-            if premarket.get("TooEarly"):
-                too_early += 1
-                diagnostics.append({
-                    "ticker": t, "signal": None, "reason": "premarket_not_exact_0929",
-                    "t_pre": premarket.get("Time")
-                })
+                if intraday_err == "premarket_not_exact_0929":
+                    too_early += 1
+                diagnostics.append({"ticker": t, "signal": None, "reason": intraday_err})
                 continue
 
             sig = detect_kicker(prev, premarket)
@@ -215,7 +217,6 @@ def main():
                 bearish_list.append(t)
             checked += 1
 
-            # diag por ticker
             diagnostics.append({
                 "ticker": t,
                 "signal": sig,
@@ -230,7 +231,7 @@ def main():
             print(f"[{t}] error: {e}")
 
     out = {
-        "date": ny_date_str,                    # clave: NOMBRE DE ARCHIVO Y FECHA = NY
+        "date": ny_date_str,
         "bullish": bullish_list,
         "bearish": bearish_list,
         "meta": {
@@ -242,7 +243,7 @@ def main():
             "errors": errors,
             "note": (
                 "Detección con cierre del día anterior y última vela del pre-market (09:29:00 NY). "
-                "Se omiten tickers si la vela 09:29 exacta no está disponible."
+                "Se omiten tickers si la vela 09:29 exacta no está disponible. Intradía con prepost=true."
             ),
             "local_log_date": today_str_local,
             "local_tz": LOCAL_TZ
@@ -258,12 +259,11 @@ def main():
         "errors": errors
     }
 
-    # Guardado principal por FECHA NY
     out_path = os.path.join(SAVE_DIR, f"{ny_date_str}.json")
-    with open(out_path, "w") as f:
+    with open(out_path, "w", encoding="utf-8") as f:
         json.dump(out, f, indent=2, ensure_ascii=False)
 
-    # Diagnóstico opcional por día (útil para auditoría)
+    # Diagnostics por día
     try:
         diag_path = os.path.join(SAVE_DIR, f"diagnostics-{ny_date_str}.jsonl")
         with open(diag_path, "w", encoding="utf-8") as fd:
