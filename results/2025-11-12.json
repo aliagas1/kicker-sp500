@@ -6,9 +6,19 @@
     "provider": "twelvedata",
     "ny_date": "2025-11-12",
     "universe_size": 346,
-    "checked_with_0929": 0,
+    "checked": 0,
     "skipped_too_early": 8,
     "errors": 0,
-    "note": "Detección con cierre del día anterior y última vela del pre-market (≤09:29 NY). Requiere datos de pre-market disponibles."
+    "note": "Detección con cierre del día anterior y última vela del pre-market (09:29:00 NY). Se omiten tickers si la vela 09:29 exacta no está disponible.",
+    "local_log_date": "2025-11-12",
+    "local_tz": "America/Lima"
+  },
+  "counts": {
+    "bullish": 0,
+    "bearish": 0,
+    "universe": 346,
+    "checked": 0,
+    "skipped_too_early": 8,
+    "errors": 0
   }
 }
