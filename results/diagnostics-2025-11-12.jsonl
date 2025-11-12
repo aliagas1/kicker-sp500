@@ -1,346 +1,346 @@
-{"ticker": "AAPL", "signal": null, "reason": "no_premarket_found"}
-{"ticker": "MSFT", "signal": null, "reason": "no_premarket_found"}
-{"ticker": "AMZN", "signal": null, "reason": "no_premarket_found"}
-{"ticker": "NVDA", "signal": null, "reason": "no_premarket_found"}
-{"ticker": "META", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "GOOGL", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "GOOG", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "BRK.B", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "LLY", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "UNH", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "JPM", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "XOM", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "V", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "PG", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "MA", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "AVGO", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "HD", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CVX", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "COST", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ABBV", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "MRK", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "PEP", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "KO", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ADBE", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "NFLX", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "PFE", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "TMO", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CRM", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ABT", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ACN", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "LIN", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "MCD", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CSCO", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "DHR", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "AMD", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "WMT", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "INTU", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "COP", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "TXN", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "PM", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "AMAT", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "HON", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CAT", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "GE", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "BA", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "IBM", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "VZ", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "LOW", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "MS", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "GS", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "RTX", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "NEE", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "LMT", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "SPGI", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "DE", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "NOW", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "INTC", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "QCOM", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ISRG", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "BKNG", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "SYK", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "PLD", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "AMT", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "BLK", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "MDT", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "TJX", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ADP", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "AXP", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CI", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "MO", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CB", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ZTS", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "BDX", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "MMC", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "C", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ELV", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "REGN", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "T", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "SO", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "PNC", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "USB", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "DUK", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "GM", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CVS", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "NSC", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ICE", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "APD", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CL", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "EMR", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "SHW", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "EQIX", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "EW", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "FDX", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "EOG", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "GD", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "HCA", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "D", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "NKE", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CME", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ITW", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ADSK", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "PSX", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "AON", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "PSA", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "AIG", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ORLY", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ROP", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "WM", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "PGR", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ETN", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "FISV", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "MU", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "KDP", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "MNST", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "MAR", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "SBUX", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "TRV", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "MPC", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "HUM", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "DELL", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "BK", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "TGT", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "GWW", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "EXC", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "LRCX", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "TT", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CARR", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "HLT", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "PAYX", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "F", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "MCK", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "AEP", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "PH", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "PRU", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "VLO", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "KMB", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ALL", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "LHX", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "AFL", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "OXY", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "MSCI", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "AJG", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "SPG", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CMI", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "AMP", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "PCAR", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CTAS", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "GDOT", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "A", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CTSH", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "IDXX", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "VICI", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "DD", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "DG", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "YUM", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "WMB", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "PSX", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "OTIS", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "DLR", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ROST", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "FAST", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ED", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "GPN", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "MCHP", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "VRSK", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "HES", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "MLM", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "FITB", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "NEM", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "OKE", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "RSG", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "EFX", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "URI", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "NOC", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "KEYS", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CMG", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "KMI", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "TEL", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "WELL", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "KR", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CPRT", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "WBD", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "HAL", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "DFS", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "TDG", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "SWK", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "LEN", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "PWR", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "MTD", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ECL", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "XYL", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "VTR", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ZBH", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ALB", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "MTB", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "AMPH", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "AME", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "EBAY", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "PPG", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ROK", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "AEE", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "STZ", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "AWK", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "EXR", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "PCG", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "FTNT", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "PEG", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "AVB", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "RCL", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "GLW", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "DTE", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CBRE", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "WEC", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "PAYC", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CLX", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CEG", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "WTW", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "EIX", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "IT", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "TSCO", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "HIG", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "VMC", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ODFL", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "IR", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CMS", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "HBAN", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "BALL", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "COF", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CDNS", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "RJF", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "A", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "LVS", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "MKC", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CHD", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "HSY", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CTRA", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ETR", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "NUE", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "XYL", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "WAB", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "FLT", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "TSN", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "SRE", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "EXPD", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "K", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "BBY", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "DRI", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "DVN", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ARE", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "TRGP", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "AAL", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "FTV", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ZBRA", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "NVR", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "MTCH", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CNP", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "AES", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "LYB", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "PTC", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CINF", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "OMC", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "BKR", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "BAX", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "HOLX", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "APTV", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "FANG", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "LUV", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CF", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "IFF", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "HPE", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "MOS", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "LDOS", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "IRM", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "KHC", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "VTRS", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "GEN", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "JKHY", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "NTRS", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "PHM", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "NI", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "APA", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "WRB", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "EQT", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "KEY", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "HES", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "TROW", "signal": null, "reason": "no_premarket_found"}
-{"ticker": "BEN", "signal": null, "reason": "no_premarket_found"}
-{"ticker": "PNR", "signal": null, "reason": "no_premarket_found"}
-{"ticker": "GL", "signal": null, "reason": "no_premarket_found"}
-{"ticker": "L", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "HAS", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "AOS", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "NRG", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "SEE", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "JNPR", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CAG", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "LUMN", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "FOX", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "FOXA", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "HWM", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "NWSA", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "NWS", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "TECH", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ALLE", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "AES", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "RHI", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "DOV", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "WHR", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "NDAQ", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "GRMN", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "FMC", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CBOE", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "LKQ", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "INCY", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "AKAM", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "LW", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "HRL", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "MKTX", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "VFC", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "BIO", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "FDS", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "WRK", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "TAP", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CCL", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "PARA", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "NCLH", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "QRVO", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "RL", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "GNRC", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "MRO", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "HII", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "NDSN", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "IP", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "IVZ", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "EMN", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "BBWI", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "PENN", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "TPR", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "PVH", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "ALGN", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CZR", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "CPB", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "UHS", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "MHK", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "NWSA", "signal": null, "reason": "no_prev_daily"}
-{"ticker": "NWS", "signal": null, "reason": "no_prev_daily"}
+{"ticker": "AAPL", "signal": null, "reason": "Pre/post data is available on Pro+ plans. You can use data without pre/post or select the appropriate plan at https://twelvedata.com/pricing"}
+{"ticker": "MSFT", "signal": null, "reason": "Pre/post data is available on Pro+ plans. You can use data without pre/post or select the appropriate plan at https://twelvedata.com/pricing"}
+{"ticker": "AMZN", "signal": null, "reason": "Pre/post data is available on Pro+ plans. You can use data without pre/post or select the appropriate plan at https://twelvedata.com/pricing"}
+{"ticker": "NVDA", "signal": null, "reason": "Pre/post data is available on Pro+ plans. You can use data without pre/post or select the appropriate plan at https://twelvedata.com/pricing"}
+{"ticker": "META", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 9 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "GOOGL", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 10 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "GOOG", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 11 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "BRK.B", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 12 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "LLY", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 13 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "UNH", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 14 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "JPM", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 15 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "XOM", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 16 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "V", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 17 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "PG", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 18 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "MA", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 19 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "AVGO", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 20 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "HD", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 21 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "CVX", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 22 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "COST", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 23 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "ABBV", "signal": null, "reason": "Pre/post data is available on Pro+ plans. You can use data without pre/post or select the appropriate plan at https://twelvedata.com/pricing"}
+{"ticker": "MRK", "signal": null, "reason": "Pre/post data is available on Pro+ plans. You can use data without pre/post or select the appropriate plan at https://twelvedata.com/pricing"}
+{"ticker": "PEP", "signal": null, "reason": "Pre/post data is available on Pro+ plans. You can use data without pre/post or select the appropriate plan at https://twelvedata.com/pricing"}
+{"ticker": "KO", "signal": null, "reason": "Pre/post data is available on Pro+ plans. You can use data without pre/post or select the appropriate plan at https://twelvedata.com/pricing"}
+{"ticker": "ADBE", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 9 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "NFLX", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 10 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "PFE", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 11 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "TMO", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 12 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "CRM", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 13 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "ABT", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 14 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "ACN", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 15 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "LIN", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 16 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "MCD", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 17 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "CSCO", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 18 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "DHR", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 19 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "AMD", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 20 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "WMT", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 21 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "INTU", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 22 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "COP", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 23 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "TXN", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 24 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "PM", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 25 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "AMAT", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 26 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "HON", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 27 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "CAT", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 28 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "GE", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 29 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "BA", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 30 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "IBM", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 31 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "VZ", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 32 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "LOW", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 33 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "MS", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 34 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "GS", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 35 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "RTX", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 36 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "NEE", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 37 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "LMT", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 38 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "SPGI", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 39 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "DE", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 40 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "NOW", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 41 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "INTC", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 42 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "QCOM", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 43 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "ISRG", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 44 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "BKNG", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 45 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "SYK", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 46 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "PLD", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 47 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "AMT", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 48 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "BLK", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 49 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "MDT", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 50 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "TJX", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 51 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "ADP", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 52 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "AXP", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 53 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "CI", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 54 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "MO", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 55 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "CB", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 56 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "ZTS", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 57 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "BDX", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 58 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "MMC", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 59 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "C", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 60 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "ELV", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 61 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "REGN", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 62 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "T", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 63 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "SO", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 64 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "PNC", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 65 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "USB", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 66 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "DUK", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 67 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "GM", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 68 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "CVS", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the current minute. 69 API credits were used, with the current limit being 8. Wait for the next minute or consider switching to a higher tier plan at https://twelvedata.com/pricing"}
+{"ticker": "NSC", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 801 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "ICE", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 802 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "APD", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 803 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "CL", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 804 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "EMR", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 805 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "SHW", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 806 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "EQIX", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 807 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "EW", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 808 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "FDX", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 809 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "EOG", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 810 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "GD", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 811 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "HCA", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 812 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "D", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 813 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "NKE", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 814 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "CME", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 815 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "ITW", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 816 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "ADSK", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 817 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "PSX", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 818 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "AON", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 819 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "PSA", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 820 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "AIG", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 821 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "ORLY", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 822 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "ROP", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 823 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "WM", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 824 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "PGR", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 825 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "ETN", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 826 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "FISV", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 827 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "MU", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 828 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "KDP", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 829 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "MNST", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 830 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "MAR", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 831 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "SBUX", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 832 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "TRV", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 833 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "MPC", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 834 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "HUM", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 835 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "DELL", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 836 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "BK", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 837 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "TGT", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 838 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "GWW", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 839 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "EXC", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 840 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "LRCX", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 841 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "TT", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 842 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "CARR", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 843 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "HLT", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 844 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "PAYX", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 845 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "F", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 846 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "MCK", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 847 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "AEP", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 848 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "PH", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 849 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "PRU", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 850 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "VLO", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 851 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "KMB", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 852 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "ALL", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 853 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "LHX", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 854 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "AFL", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 855 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "OXY", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 856 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "MSCI", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 857 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "AJG", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 858 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "SPG", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 859 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "CMI", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 860 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "AMP", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 861 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "PCAR", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 862 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "CTAS", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 863 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "GDOT", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 864 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "A", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 865 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "CTSH", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 866 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "IDXX", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 867 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "VICI", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 868 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "DD", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 869 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "DG", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 870 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "YUM", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 871 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "WMB", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 872 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "PSX", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 873 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "OTIS", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 874 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "DLR", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 875 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "ROST", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 876 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "FAST", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 877 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "ED", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 878 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "GPN", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 879 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "MCHP", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 880 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "VRSK", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 881 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "HES", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 882 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "MLM", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 883 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "FITB", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 884 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "NEM", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 885 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "OKE", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 886 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "RSG", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 887 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "EFX", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 888 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "URI", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 889 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "NOC", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 890 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "KEYS", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 891 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "CMG", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 892 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "KMI", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 893 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "TEL", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 894 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "WELL", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 895 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "KR", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 896 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "CPRT", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 897 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "WBD", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 898 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "HAL", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 899 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "DFS", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 900 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "TDG", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 901 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "SWK", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 902 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "LEN", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 903 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "PWR", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 904 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "MTD", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 905 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "ECL", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 906 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "XYL", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 907 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "VTR", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 908 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "ZBH", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 909 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "ALB", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 910 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "MTB", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 911 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "AMPH", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 912 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "AME", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 913 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "EBAY", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 914 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "PPG", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 915 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "ROK", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 916 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "AEE", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 917 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "STZ", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 918 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "AWK", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 919 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "EXR", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 920 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "PCG", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 921 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "FTNT", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 922 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "PEG", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 923 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "AVB", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 924 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "RCL", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 925 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "GLW", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 926 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "DTE", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 927 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "CBRE", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 928 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "WEC", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 929 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "PAYC", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 930 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "CLX", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 931 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "CEG", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 932 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "WTW", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 933 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "EIX", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 934 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "IT", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 935 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "TSCO", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 936 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "HIG", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 937 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "VMC", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 938 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "ODFL", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 939 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "IR", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 940 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "CMS", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 941 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "HBAN", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 942 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "BALL", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 943 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "COF", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 944 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "CDNS", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 945 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "RJF", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 946 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "A", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 947 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "LVS", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 948 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "MKC", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 949 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "CHD", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 950 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "HSY", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 951 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "CTRA", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 952 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "ETR", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 953 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "NUE", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 954 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "XYL", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 955 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "WAB", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 956 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "FLT", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 957 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "TSN", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 958 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "SRE", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 959 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "EXPD", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 960 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "K", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 961 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "BBY", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 962 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "DRI", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 963 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "DVN", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 964 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "ARE", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 965 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "TRGP", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 966 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "AAL", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 967 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "FTV", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 968 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "ZBRA", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 969 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "NVR", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 970 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "MTCH", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 971 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "CNP", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 972 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "AES", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 973 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "LYB", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 974 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "PTC", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 975 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "CINF", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 976 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "OMC", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 977 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "BKR", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 978 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "BAX", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 979 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "HOLX", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 980 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "APTV", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 981 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "FANG", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 982 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "LUV", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 983 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "CF", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 984 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "IFF", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 985 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "HPE", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 986 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "MOS", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 987 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "LDOS", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 988 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "IRM", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 989 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "KHC", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 990 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "VTRS", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 991 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "GEN", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 992 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "JKHY", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 993 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "NTRS", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 994 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "PHM", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 995 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "NI", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 996 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "APA", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 997 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "WRB", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 998 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "EQT", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 999 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "KEY", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1000 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "HES", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1001 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "TROW", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1002 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "BEN", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1003 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "PNR", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1004 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "GL", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1005 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "L", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1006 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "HAS", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1007 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "AOS", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1008 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "NRG", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1009 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "SEE", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1010 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "JNPR", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1011 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "CAG", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1012 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "LUMN", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1013 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "FOX", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1014 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "FOXA", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1015 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "HWM", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1016 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "NWSA", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1017 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "NWS", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1018 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "TECH", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1019 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "ALLE", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1020 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "AES", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1021 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "RHI", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1022 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "DOV", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1023 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "WHR", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1024 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "NDAQ", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1025 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "GRMN", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1026 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "FMC", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1027 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "CBOE", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1028 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "LKQ", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1029 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "INCY", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1030 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "AKAM", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1031 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "LW", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1032 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "HRL", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1033 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "MKTX", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1034 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "VFC", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1035 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "BIO", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1036 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "FDS", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1037 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "WRK", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1038 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "TAP", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1039 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "CCL", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1040 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "PARA", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1041 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "NCLH", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1042 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "QRVO", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1043 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "RL", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1044 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "GNRC", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1045 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "MRO", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1046 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "HII", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1047 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "NDSN", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1048 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "IP", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1049 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "IVZ", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1050 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "EMN", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1051 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "BBWI", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1052 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "PENN", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1053 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "TPR", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1054 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "PVH", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1055 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "ALGN", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1056 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "CZR", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1057 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "CPB", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1058 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "UHS", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1059 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "MHK", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1060 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "NWSA", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1061 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
+{"ticker": "NWS", "signal": null, "reason": "no_prev_daily", "api_error": "You have run out of API credits for the day. 1062 API credits were used, with the current limit being 800. Wait for the next day or consider switching to a paid plan that will remove daily limits at https://twelvedata.com/pricing"}
