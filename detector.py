@@ -76,10 +76,27 @@ def _rate_limit_block():
 def ensure_dirs():
     os.makedirs(SAVE_DIR, exist_ok=True)
 
+def _find_ticker_column(df: pd.DataFrame) -> str:
+    """Devuelve el nombre de la columna 'ticker' sin importar mayúsculas/minúsculas."""
+    for col in df.columns:
+        if col.strip().lower() == "ticker":
+            return col
+    raise KeyError("No se encontró la columna 'ticker' en el CSV del universo.")
+
 def load_universe(path: str) -> pd.DataFrame:
     df = pd.read_csv(path)
-    df = df.dropna(subset=["ticker"])
-    df["ticker_td"] = df["ticker"].astype(str).strip().str.replace("-", ".", regex=False)
+    col_ticker = _find_ticker_column(df)
+    df = df.dropna(subset=[col_ticker])
+
+    # CORRECCIÓN: usar .str.strip() (no .strip()) y normalizar a mayúsculas.
+    df["ticker_td"] = (
+        df[col_ticker]
+        .astype(str)
+        .str.strip()
+        .str.replace("-", ".", regex=False)
+        .str.upper()
+    )
+
     if UNIVERSE_MAX:
         df = df.head(UNIVERSE_MAX)
     return df
@@ -278,14 +295,14 @@ def main():
             if USE_PREPOST:
                 intra, intra_err = get_premarket_0929(t, API_KEY)
 
-                # 2.a) Si el plan no permite pre/post o no está 09:29 exacto → fallback si está permitido
+                # 2.a) Si no hay permiso o falta 09:29 → fallback 09:30 (si está permitido)
                 if (intra is None and FALLBACK_QUASI_KICKER and (intra_err in ("no_premarket_plan", "no_premarket_0929"))):
                     intra, intra_err = get_open_0930(t, API_KEY)
                     if intra:
                         used_fallback = True
                         used_fallback_count += 1
 
-            # 3) Si no usamos prepost o falló y no hay fallback, intentar quasi-kicker directo si está permitido
+            # 3) Si no usamos prepost o falló y no hay fallback aún, intenta quasi-kicker directo si procede
             if intra is None and not USE_PREPOST and FALLBACK_QUASI_KICKER:
                 intra, intra_err = get_open_0930(t, API_KEY)
                 if intra:
@@ -293,7 +310,6 @@ def main():
                     used_fallback_count += 1
 
             if not intra:
-                # Si venimos de prepost y no hay 09:29 exacto, lo contamos como too_early/missing
                 if intra_err in ("no_premarket_0929", "no_open_0930"):
                     too_early_or_missing += 1
                 diagnostics.append({"ticker": t, "signal": None, "reason": intra_err})
