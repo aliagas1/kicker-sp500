@@ -1,0 +1,346 @@
+{"ticker": "AAPL", "signal": "bearish", "prev_close": 272.41, "intra_open": 268.815, "intra_close": 268.04, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "MSFT", "signal": null, "prev_close": 510.17999, "intra_open": 508.45, "intra_close": 508.51, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "AMZN", "signal": "bearish", "prev_close": 234.69, "intra_open": 233.17, "intra_close": 233.02, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "NVDA", "signal": "bearish", "prev_close": 190.17, "intra_open": 185.965, "intra_close": 185.03, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "META", "signal": null, "prev_close": 609.46002, "intra_open": 609.67, "intra_close": 605.005, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "GOOGL", "signal": "bullish", "prev_close": 276.41, "intra_open": 285.82, "intra_close": 287.76, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "GOOG", "signal": "bullish", "prev_close": 276.98001, "intra_open": 286.425, "intra_close": 288.1, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "BRK.B", "signal": null, "reason": "no_open_0930"}
+{"ticker": "LLY", "signal": null, "prev_close": 1025.28003, "intra_open": 1003.8, "intra_close": 1006.77, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "UNH", "signal": null, "prev_close": 321.85999, "intra_open": 320.6, "intra_close": 321.39, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "JPM", "signal": null, "prev_close": 303.60999, "intra_open": 303.9, "intra_close": 303.13, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "XOM", "signal": null, "prev_close": 119.29, "intra_open": 119.09, "intra_close": 118.91, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "V", "signal": null, "prev_close": 330.019989, "intra_open": 330.755, "intra_close": 331.39, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "PG", "signal": null, "reason": "no_open_0930"}
+{"ticker": "MA", "signal": null, "prev_close": 545.72998, "intra_open": 546.04, "intra_close": 547.09, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "AVGO", "signal": "bearish", "prev_close": 342.45999, "intra_open": 339.815, "intra_close": 338.55, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "HD", "signal": null, "prev_close": 362.35999, "intra_open": 361.69, "intra_close": 362.23, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "CVX", "signal": null, "prev_close": 157.62, "intra_open": 157.62, "intra_close": 157.12, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "COST", "signal": null, "prev_close": 922.97998, "intra_open": 921.87, "intra_close": 921.57, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "ABBV", "signal": "bullish", "prev_close": 232.36, "intra_open": 233.795, "intra_close": 234.05, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "MRK", "signal": null, "prev_close": 92.92, "intra_open": 93.23, "intra_close": 93.43, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "PEP", "signal": null, "prev_close": 145.85001, "intra_open": 146.12, "intra_close": 145.46, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "KO", "signal": null, "prev_close": 71.16, "intra_open": 71.2, "intra_close": 71.2, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "ADBE", "signal": null, "prev_close": 331.10999, "intra_open": 331.105, "intra_close": 330.13, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "NFLX", "signal": null, "prev_close": 111.217, "intra_open": 110.77, "intra_close": 111.07, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "PFE", "signal": null, "prev_close": 25.059999, "intra_open": 25.05, "intra_close": 25.12, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "TMO", "signal": "bearish", "prev_close": 578.71002, "intra_open": 575.5, "intra_close": 572.39, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "CRM", "signal": null, "prev_close": 243.66, "intra_open": 242.195, "intra_close": 242.26, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "ABT", "signal": null, "prev_close": 130.59, "intra_open": 130.675, "intra_close": 130.88, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "ACN", "signal": "bearish", "prev_close": 245.21001, "intra_open": 243.5, "intra_close": 242.86, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "LIN", "signal": null, "prev_close": 423.39001, "intra_open": 421.425, "intra_close": 421.63, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "MCD", "signal": null, "prev_close": 307.029999, "intra_open": 307.45, "intra_close": 307.34, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "CSCO", "signal": null, "prev_close": 78.0, "intra_open": 77.885, "intra_close": 77.57, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "DHR", "signal": "bearish", "prev_close": 221.21001, "intra_open": 219.29, "intra_close": 219.205, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "AMD", "signal": "bearish", "prev_close": 246.81, "intra_open": 242.745, "intra_close": 241.415, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "WMT", "signal": null, "prev_close": 102.48, "intra_open": 102.545, "intra_close": 102.62, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "INTU", "signal": null, "prev_close": 662.40997, "intra_open": 662.53, "intra_close": 662.22, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "COP", "signal": "bearish", "prev_close": 91.37, "intra_open": 90.51, "intra_close": 90.03, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "TXN", "signal": null, "prev_close": 159.33, "intra_open": 159.0, "intra_close": 158.235, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "PM", "signal": null, "prev_close": 155.42999, "intra_open": 154.8, "intra_close": 154.45, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "AMAT", "signal": "bearish", "prev_close": 226.0099945, "intra_open": 224.2, "intra_close": 223.47, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "HON", "signal": null, "prev_close": 199.039993, "intra_open": 198.2, "intra_close": 197.6, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "CAT", "signal": null, "prev_close": 554.030029, "intra_open": 552.585, "intra_close": 555.45, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "GE", "signal": null, "prev_close": 304.82001, "intra_open": 306.98, "intra_close": 305.26, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "BA", "signal": null, "prev_close": 194.52, "intra_open": 194.91, "intra_close": 194.68, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "IBM", "signal": null, "prev_close": 305.69, "intra_open": 305.25, "intra_close": 304.5, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "VZ", "signal": null, "prev_close": 41.060001, "intra_open": 41.08, "intra_close": 41.07, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "LOW", "signal": null, "prev_close": 227.85001, "intra_open": 227.36, "intra_close": 227.46, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "MS", "signal": null, "reason": "no_open_0930"}
+{"ticker": "GS", "signal": null, "prev_close": 790.90997, "intra_open": 788.975, "intra_close": 787.66, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "RTX", "signal": null, "prev_close": 175.57001, "intra_open": 176.02, "intra_close": 175.89, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "NEE", "signal": null, "prev_close": 83.88, "intra_open": 83.845, "intra_close": 83.98, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "LMT", "signal": null, "prev_close": 465.76999, "intra_open": 467.5, "intra_close": 467.25, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "SPGI", "signal": null, "prev_close": 493.89999, "intra_open": 495.895, "intra_close": 491.92, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "DE", "signal": null, "prev_close": 476.23001, "intra_open": 476.245, "intra_close": 476.35, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "NOW", "signal": null, "prev_close": 850.42999, "intra_open": 847.005, "intra_close": 844.96, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "INTC", "signal": null, "prev_close": 35.52, "intra_open": 35.43, "intra_close": 35.2, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "QCOM", "signal": null, "prev_close": 173.98, "intra_open": 173.145, "intra_close": 172.89, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "ISRG", "signal": "bearish", "prev_close": 549.51001, "intra_open": 546.235, "intra_close": 544.28, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "BKNG", "signal": null, "prev_close": 5048.0097656, "intra_open": 5042.655, "intra_close": 5048.745, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "SYK", "signal": null, "prev_close": 362.22, "intra_open": 362.38, "intra_close": 362.33, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "PLD", "signal": null, "prev_close": 122.83, "intra_open": 123.35, "intra_close": 123.35, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "AMT", "signal": null, "prev_close": 183.59, "intra_open": 183.325, "intra_close": 184.03, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "BLK", "signal": null, "prev_close": 1057.93994, "intra_open": 1053.58, "intra_close": 1051.565, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "MDT", "signal": null, "prev_close": 95.87, "intra_open": 95.81, "intra_close": 96.39, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "TJX", "signal": null, "prev_close": 146.080002, "intra_open": 146.39, "intra_close": 146.39, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "ADP", "signal": null, "prev_close": 253.089996, "intra_open": 253.0, "intra_close": 252.14, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "AXP", "signal": null, "prev_close": 357.17999, "intra_open": 356.64, "intra_close": 356.39, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "CI", "signal": null, "prev_close": 269.66, "intra_open": 270.13, "intra_close": 270.13, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "MO", "signal": null, "prev_close": 58.19, "intra_open": 58.25, "intra_close": 58.185, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "CB", "signal": "bullish", "prev_close": 295.48999, "intra_open": 297.12, "intra_close": 297.245, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "ZTS", "signal": null, "prev_close": 120.82, "intra_open": 121.0, "intra_close": 120.925, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "BDX", "signal": null, "prev_close": 193.039993, "intra_open": 192.415, "intra_close": 193.0, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "MMC", "signal": null, "prev_close": 182.81, "intra_open": 183.125, "intra_close": 183.685, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "C", "signal": null, "prev_close": 100.3, "intra_open": 100.23, "intra_close": 100.08, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "ELV", "signal": null, "prev_close": 325.82999, "intra_open": 325.51, "intra_close": 325.5, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "REGN", "signal": null, "prev_close": 693.5, "intra_open": 694.91, "intra_close": 696.535, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "T", "signal": null, "prev_close": 25.59, "intra_open": 25.61, "intra_close": 25.62, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "SO", "signal": null, "prev_close": 90.69, "intra_open": 90.41, "intra_close": 90.41, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "PNC", "signal": null, "reason": "no_open_0930"}
+{"ticker": "USB", "signal": null, "prev_close": 47.099998, "intra_open": 46.905, "intra_close": 46.81, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "DUK", "signal": null, "prev_close": 122.71, "intra_open": 123.25, "intra_close": 123.275, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "GM", "signal": null, "prev_close": 70.52, "intra_open": 70.32, "intra_close": 70.23, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "CVS", "signal": null, "prev_close": 77.81, "intra_open": 77.9, "intra_close": 77.855, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "NSC", "signal": null, "prev_close": 283.98001, "intra_open": 283.95, "intra_close": 283.95, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "ICE", "signal": null, "prev_close": 152.070007, "intra_open": 152.045, "intra_close": 151.89, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "APD", "signal": null, "reason": "no_open_0930"}
+{"ticker": "CL", "signal": null, "prev_close": 78.050003, "intra_open": 78.345, "intra_close": 78.11, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "EMR", "signal": null, "prev_close": 127.58, "intra_open": 127.495, "intra_close": 127.01, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "SHW", "signal": null, "reason": "no_open_0930"}
+{"ticker": "EQIX", "signal": null, "prev_close": 785.57001, "intra_open": 786.36, "intra_close": 786.78, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "EW", "signal": null, "prev_close": 86.3, "intra_open": 85.71, "intra_close": 85.71, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "FDX", "signal": null, "prev_close": 267.56, "intra_open": 267.16, "intra_close": 266.28, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "EOG", "signal": null, "prev_close": 110.4, "intra_open": 110.38, "intra_close": 110.48, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "GD", "signal": null, "prev_close": 344.25, "intra_open": 345.13, "intra_close": 345.74, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "HCA", "signal": null, "prev_close": 472.64999, "intra_open": 474.35, "intra_close": 474.82, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "D", "signal": null, "prev_close": 60.56, "intra_open": 60.61, "intra_close": 60.705, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "NKE", "signal": null, "prev_close": 64.17, "intra_open": 63.17, "intra_close": 63.23, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "CME", "signal": null, "prev_close": 285.040009, "intra_open": 285.93, "intra_close": 285.05, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "ITW", "signal": null, "reason": "no_open_0930"}
+{"ticker": "ADSK", "signal": null, "prev_close": 299.39001, "intra_open": 300.31, "intra_close": 298.55, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "PSX", "signal": "bearish", "prev_close": 142.32001, "intra_open": 140.205, "intra_close": 139.88, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "AON", "signal": null, "prev_close": 350.13, "intra_open": 349.46, "intra_close": 350.175, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "PSA", "signal": null, "reason": "no_open_0930"}
+{"ticker": "AIG", "signal": null, "prev_close": 77.75, "intra_open": 77.79, "intra_close": 77.94, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "ORLY", "signal": null, "prev_close": 98.8, "intra_open": 99.03, "intra_close": 99.055, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "ROP", "signal": null, "prev_close": 449.5, "intra_open": 447.34, "intra_close": 447.685, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "WM", "signal": null, "prev_close": 209.17, "intra_open": 209.07, "intra_close": 209.18, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "PGR", "signal": "bullish", "prev_close": 225.17999, "intra_open": 226.86, "intra_close": 226.945, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "ETN", "signal": null, "prev_close": 352.39001, "intra_open": 351.96, "intra_close": 350.28, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "FISV", "signal": null, "prev_close": 63.42, "intra_open": 63.565, "intra_close": 63.72, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "MU", "signal": null, "prev_close": 246.83, "intra_open": 246.945, "intra_close": 247.1, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "KDP", "signal": null, "prev_close": 27.13, "intra_open": 27.075, "intra_close": 27.065, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "MNST", "signal": null, "prev_close": 71.31, "intra_open": 71.74, "intra_close": 71.56, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "MAR", "signal": null, "prev_close": 285.72, "intra_open": 286.345, "intra_close": 285.665, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "SBUX", "signal": null, "prev_close": 84.78, "intra_open": 85.145, "intra_close": 85.93, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "TRV", "signal": null, "prev_close": 287.29001, "intra_open": 288.34, "intra_close": 288.485, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "MPC", "signal": "bearish", "prev_close": 199.98, "intra_open": 198.695, "intra_close": 198.61, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "HUM", "signal": null, "prev_close": 237.12, "intra_open": 235.75, "intra_close": 235.75, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "DELL", "signal": null, "prev_close": 133.75999, "intra_open": 124.225, "intra_close": 124.375, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "BK", "signal": null, "prev_close": 110.48, "intra_open": 110.52, "intra_close": 110.475, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "TGT", "signal": null, "prev_close": 89.9, "intra_open": 89.47, "intra_close": 89.87, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "GWW", "signal": null, "reason": "no_open_0930"}
+{"ticker": "EXC", "signal": null, "prev_close": 45.94, "intra_open": 46.135, "intra_close": 46.23, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "LRCX", "signal": null, "prev_close": 148.25999, "intra_open": 147.15, "intra_close": 147.31, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "TT", "signal": null, "prev_close": 418.16, "intra_open": 418.545, "intra_close": 418.545, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "CARR", "signal": null, "prev_close": 54.099998, "intra_open": 53.88, "intra_close": 53.66, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "HLT", "signal": null, "prev_close": 269.67001, "intra_open": 270.26, "intra_close": 270.26, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "PAYX", "signal": null, "prev_close": 112.099998, "intra_open": 112.13, "intra_close": 111.65, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "F", "signal": null, "reason": "no_open_0930"}
+{"ticker": "MCK", "signal": null, "prev_close": 842.090027, "intra_open": 847.19, "intra_close": 847.19, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "AEP", "signal": null, "prev_close": 121.3, "intra_open": 122.17, "intra_close": 121.96, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "PH", "signal": null, "prev_close": 831.95001, "intra_open": 830.13, "intra_close": 830.13, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "PRU", "signal": null, "prev_close": 107.16, "intra_open": 107.21, "intra_close": 107.21, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "VLO", "signal": null, "prev_close": 181.75999, "intra_open": 181.63, "intra_close": 181.15, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "KMB", "signal": null, "prev_close": 104.019997, "intra_open": 103.89, "intra_close": 103.86, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "ALL", "signal": null, "prev_close": 214.3, "intra_open": 214.17, "intra_close": 214.95, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "LHX", "signal": null, "reason": "no_open_0930"}
+{"ticker": "AFL", "signal": null, "prev_close": 114.34, "intra_open": 114.145, "intra_close": 114.3, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "OXY", "signal": null, "prev_close": 42.76, "intra_open": 42.57, "intra_close": 42.45, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "MSCI", "signal": "bearish", "prev_close": 565.15002, "intra_open": 561.925, "intra_close": 561.615, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "AJG", "signal": null, "prev_close": 258.51001, "intra_open": 258.38, "intra_close": 260.14, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "SPG", "signal": null, "reason": "no_open_0930"}
+{"ticker": "CMI", "signal": null, "prev_close": 462.60999, "intra_open": 465.32, "intra_close": 463.63, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "AMP", "signal": null, "reason": "no_open_0930"}
+{"ticker": "PCAR", "signal": null, "prev_close": 95.59, "intra_open": 95.915, "intra_close": 95.91, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "CTAS", "signal": null, "prev_close": 186.72, "intra_open": 186.135, "intra_close": 185.69, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "GDOT", "signal": null, "reason": "no_open_0930"}
+{"ticker": "A", "signal": null, "prev_close": 146.82001, "intra_open": 146.425, "intra_close": 145.62, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "CTSH", "signal": null, "prev_close": 72.62, "intra_open": 72.7, "intra_close": 72.095, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "IDXX", "signal": null, "prev_close": 689.92999, "intra_open": 689.065, "intra_close": 693.61, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "VICI", "signal": null, "prev_close": 30.36, "intra_open": 30.385, "intra_close": 30.34, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "DD", "signal": null, "prev_close": 39.71, "intra_open": 39.66, "intra_close": 39.66, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "DG", "signal": null, "prev_close": 104.3, "intra_open": 104.195, "intra_close": 104.195, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "YUM", "signal": null, "prev_close": 149.020004, "intra_open": 149.03, "intra_close": 148.78, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "WMB", "signal": null, "prev_close": 60.99, "intra_open": 60.805, "intra_close": 60.51, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "PSX", "signal": "bearish", "prev_close": 142.32001, "intra_open": 140.205, "intra_close": 139.88, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "OTIS", "signal": null, "reason": "no_open_0930"}
+{"ticker": "DLR", "signal": null, "prev_close": 158.17999, "intra_open": 158.435, "intra_close": 158.435, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "ROST", "signal": null, "prev_close": 160.58, "intra_open": 160.55, "intra_close": 160.36, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "FAST", "signal": null, "prev_close": 40.45, "intra_open": 40.39, "intra_close": 40.46, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "ED", "signal": null, "prev_close": 101.66, "intra_open": 102.1, "intra_close": 102.08, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "GPN", "signal": null, "prev_close": 74.11, "intra_open": 73.88, "intra_close": 73.88, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "MCHP", "signal": null, "prev_close": 53.48, "intra_open": 53.215, "intra_close": 52.915, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "VRSK", "signal": null, "prev_close": 215.84, "intra_open": 215.95, "intra_close": 215.95, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "HES", "signal": null, "reason": "no_prev_daily", "api_error": "**symbol** or **figi** parameter is missing or invalid. Please provide a valid symbol according to API documentation: https://twelvedata.com/docs#reference-data"}
+{"ticker": "MLM", "signal": null, "reason": "no_open_0930"}
+{"ticker": "FITB", "signal": null, "prev_close": 42.57, "intra_open": 42.365, "intra_close": 42.32, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "NEM", "signal": null, "prev_close": 87.8, "intra_open": 87.31, "intra_close": 87.39, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "OKE", "signal": null, "prev_close": 70.49, "intra_open": 70.29, "intra_close": 69.97, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "RSG", "signal": null, "prev_close": 209.8, "intra_open": 209.85, "intra_close": 209.85, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "EFX", "signal": null, "prev_close": 207.14999, "intra_open": 206.935, "intra_close": 206.96, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "URI", "signal": null, "prev_close": 834.030029, "intra_open": 834.0, "intra_close": 834.54, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "NOC", "signal": null, "prev_close": 558.0, "intra_open": 560.3, "intra_close": 559.98, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "KEYS", "signal": null, "prev_close": 179.059998, "intra_open": 176.99, "intra_close": 176.99, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "CMG", "signal": null, "reason": "no_open_0930"}
+{"ticker": "KMI", "signal": null, "prev_close": 27.42, "intra_open": 27.42, "intra_close": 27.33, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "TEL", "signal": null, "prev_close": 237.33, "intra_open": 236.485, "intra_close": 235.11, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "WELL", "signal": null, "prev_close": 193.82001, "intra_open": 194.47, "intra_close": 195.595, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "KR", "signal": null, "prev_close": 66.71, "intra_open": 66.755, "intra_close": 66.73, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "CPRT", "signal": null, "prev_close": 41.080002, "intra_open": 40.92, "intra_close": 40.89, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "WBD", "signal": null, "prev_close": 23.030001, "intra_open": 23.03, "intra_close": 22.83, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "HAL", "signal": null, "prev_close": 27.3, "intra_open": 27.2, "intra_close": 27.19, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "DFS", "signal": null, "reason": "no_prev_daily", "api_error": "This symbol is available starting with Grow (Grow plan). Consider upgrading now at https://twelvedata.com/pricing"}
+{"ticker": "TDG", "signal": null, "prev_close": 1340.59998, "intra_open": 1345.8, "intra_close": 1346.775, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "SWK", "signal": null, "reason": "no_open_0930"}
+{"ticker": "LEN", "signal": "bearish", "prev_close": 121.11, "intra_open": 120.19, "intra_close": 119.82, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "PWR", "signal": null, "prev_close": 429.29999, "intra_open": 428.0, "intra_close": 428.0, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "MTD", "signal": null, "prev_close": 1403.079956, "intra_open": 1394.56, "intra_close": 1394.575, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "ECL", "signal": null, "prev_close": 258.57999, "intra_open": 257.23, "intra_close": 257.44, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "XYL", "signal": null, "prev_close": 142.73, "intra_open": 142.705, "intra_close": 142.56, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "VTR", "signal": null, "prev_close": 78.0, "intra_open": 78.19, "intra_close": 78.19, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "ZBH", "signal": null, "prev_close": 89.91, "intra_open": 89.88, "intra_close": 89.735, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "ALB", "signal": "bullish", "prev_close": 115.14, "intra_open": 120.05, "intra_close": 120.71, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "MTB", "signal": null, "reason": "no_open_0930"}
+{"ticker": "AMPH", "signal": null, "reason": "no_open_0930"}
+{"ticker": "AME", "signal": null, "reason": "no_open_0930"}
+{"ticker": "EBAY", "signal": null, "prev_close": 83.85, "intra_open": 83.515, "intra_close": 83.515, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "PPG", "signal": null, "prev_close": 97.029999, "intra_open": 96.695, "intra_close": 96.565, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "ROK", "signal": null, "prev_close": 377.13, "intra_open": 375.475, "intra_close": 375.475, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "AEE", "signal": null, "reason": "no_open_0930"}
+{"ticker": "STZ", "signal": null, "prev_close": 129.16, "intra_open": 129.2, "intra_close": 129.42, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "AWK", "signal": null, "prev_close": 131.62, "intra_open": 132.17, "intra_close": 132.17, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "EXR", "signal": null, "prev_close": 132.91, "intra_open": 133.305, "intra_close": 133.345, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "PCG", "signal": null, "prev_close": 16.49, "intra_open": 16.42, "intra_close": 16.22, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "FTNT", "signal": null, "prev_close": 82.31, "intra_open": 82.025, "intra_close": 82.25, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "PEG", "signal": null, "prev_close": 82.84, "intra_open": 82.92, "intra_close": 82.92, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "AVB", "signal": null, "reason": "no_open_0930"}
+{"ticker": "RCL", "signal": "bearish", "prev_close": 252.87, "intra_open": 250.73, "intra_close": 250.45, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "GLW", "signal": null, "prev_close": 82.059998, "intra_open": 81.65, "intra_close": 80.745, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "DTE", "signal": null, "prev_close": 137.10001, "intra_open": 137.63, "intra_close": 137.63, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "CBRE", "signal": null, "prev_close": 153.66, "intra_open": 153.385, "intra_close": 153.3, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "WEC", "signal": null, "prev_close": 110.97, "intra_open": 111.45, "intra_close": 111.445, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "PAYC", "signal": "bullish", "prev_close": 166.12, "intra_open": 167.42, "intra_close": 167.5, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "CLX", "signal": null, "prev_close": 103.68, "intra_open": 103.49, "intra_close": 103.4, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "CEG", "signal": null, "prev_close": 338.51999, "intra_open": 336.685, "intra_close": 337.465, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "WTW", "signal": null, "reason": "no_open_0930"}
+{"ticker": "EIX", "signal": "bearish", "prev_close": 58.71, "intra_open": 58.1, "intra_close": 57.65, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "IT", "signal": null, "prev_close": 231.029999, "intra_open": 230.4, "intra_close": 229.09, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "TSCO", "signal": null, "prev_close": 55.42, "intra_open": 55.435, "intra_close": 55.21, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "HIG", "signal": null, "prev_close": 133.85001, "intra_open": 134.48, "intra_close": 134.58, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "VMC", "signal": null, "reason": "no_open_0930"}
+{"ticker": "ODFL", "signal": null, "reason": "no_open_0930"}
+{"ticker": "IR", "signal": null, "prev_close": 75.47, "intra_open": 75.15, "intra_close": 75.15, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "CMS", "signal": null, "reason": "no_open_0930"}
+{"ticker": "HBAN", "signal": null, "prev_close": 15.73, "intra_open": 15.665, "intra_close": 15.66, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "BALL", "signal": "bullish", "prev_close": 47.6, "intra_open": 48.11, "intra_close": 48.405, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "COF", "signal": null, "prev_close": 211.14999, "intra_open": 210.105, "intra_close": 209.02, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "CDNS", "signal": null, "prev_close": 314.92999, "intra_open": 314.45, "intra_close": 313.63, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "RJF", "signal": null, "reason": "no_open_0930"}
+{"ticker": "A", "signal": null, "prev_close": 146.82001, "intra_open": 146.425, "intra_close": 145.62, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "LVS", "signal": null, "prev_close": 65.38, "intra_open": 65.61, "intra_close": 65.57, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "MKC", "signal": "bullish", "prev_close": 65.33, "intra_open": 65.69, "intra_close": 65.89, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "CHD", "signal": null, "reason": "no_open_0930"}
+{"ticker": "HSY", "signal": "bullish", "prev_close": 179.2, "intra_open": 180.5, "intra_close": 182.63, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "CTRA", "signal": null, "prev_close": 26.34, "intra_open": 26.23, "intra_close": 26.185, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "ETR", "signal": null, "prev_close": 95.050003, "intra_open": 95.48, "intra_close": 95.36, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "NUE", "signal": null, "prev_close": 147.78, "intra_open": 147.39, "intra_close": 147.39, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "XYL", "signal": null, "prev_close": 142.73, "intra_open": 142.705, "intra_close": 142.56, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "WAB", "signal": null, "prev_close": 203.92, "intra_open": 202.98, "intra_close": 202.98, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "FLT", "signal": null, "reason": "no_open_0930"}
+{"ticker": "TSN", "signal": null, "prev_close": 53.98, "intra_open": 53.85, "intra_close": 53.85, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "SRE", "signal": null, "prev_close": 92.0, "intra_open": 92.4, "intra_close": 91.57, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "EXPD", "signal": null, "reason": "no_open_0930"}
+{"ticker": "K", "signal": null, "prev_close": 83.32, "intra_open": 83.36, "intra_close": 83.35, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "BBY", "signal": null, "prev_close": 75.72, "intra_open": 75.28, "intra_close": 75.28, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "DRI", "signal": null, "prev_close": 173.83, "intra_open": 174.21, "intra_close": 174.635, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "DVN", "signal": null, "prev_close": 35.84, "intra_open": 35.84, "intra_close": 35.7, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "ARE", "signal": null, "reason": "no_open_0930"}
+{"ticker": "TRGP", "signal": null, "prev_close": 173.10001, "intra_open": 172.29, "intra_close": 172.29, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "AAL", "signal": null, "prev_close": 12.76, "intra_open": 12.775, "intra_close": 12.7, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "FTV", "signal": null, "reason": "no_open_0930"}
+{"ticker": "ZBRA", "signal": null, "prev_close": 240.56, "intra_open": 238.64, "intra_close": 238.64, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "NVR", "signal": null, "reason": "no_open_0930"}
+{"ticker": "MTCH", "signal": null, "prev_close": 32.28, "intra_open": 32.205, "intra_close": 32.18, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "CNP", "signal": null, "reason": "no_open_0930"}
+{"ticker": "AES", "signal": null, "prev_close": 13.82, "intra_open": 13.84, "intra_close": 13.835, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "LYB", "signal": null, "prev_close": 45.3, "intra_open": 45.52, "intra_close": 45.055, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "PTC", "signal": null, "prev_close": 179.61, "intra_open": 178.935, "intra_close": 178.935, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "CINF", "signal": null, "prev_close": 163.89999, "intra_open": 163.93, "intra_close": 163.965, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "OMC", "signal": null, "prev_close": 72.23, "intra_open": 71.995, "intra_close": 72.675, "intra_time": "2025-11-17 09:30:00", "intra_type": "regular_0930", "used_fallback": true}
+{"ticker": "BKR", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "BAX", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "HOLX", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "APTV", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "FANG", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "LUV", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "CF", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "IFF", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "HPE", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "MOS", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "LDOS", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "IRM", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "KHC", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "VTRS", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "GEN", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "JKHY", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "NTRS", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "PHM", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "NI", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "APA", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "WRB", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "EQT", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "KEY", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "HES", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "TROW", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "BEN", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "PNR", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "GL", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "L", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "HAS", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "AOS", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "NRG", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "SEE", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "JNPR", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "CAG", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "LUMN", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "FOX", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "FOXA", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "HWM", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "NWSA", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "NWS", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "TECH", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "ALLE", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "AES", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "RHI", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "DOV", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "WHR", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "NDAQ", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "GRMN", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "FMC", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "CBOE", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "LKQ", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "INCY", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "AKAM", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "LW", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "HRL", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "MKTX", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "VFC", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "BIO", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "FDS", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "WRK", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "TAP", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "CCL", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "PARA", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "NCLH", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "QRVO", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "RL", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "GNRC", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "MRO", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "HII", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "NDSN", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "IP", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "IVZ", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "EMN", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "BBWI", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "PENN", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "TPR", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "PVH", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "ALGN", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "CZR", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "CPB", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "UHS", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "MHK", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "NWSA", "signal": null, "reason": "error:daily_limit_reached:780/780"}
+{"ticker": "NWS", "signal": null, "reason": "error:daily_limit_reached:780/780"}
