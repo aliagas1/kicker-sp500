@@ -2,93 +2,54 @@ name: Kicker Daily
 
 on:
   schedule:
-    # Primer intento a 09:34 NY (14:34 UTC)
-    - cron: "34 14 * * *"
-    # Segundo intento a 09:38 NY (14:38 UTC)
-    - cron: "38 14 * * *"
-    # Tercer intento a 09:42 NY (14:42 UTC)
-    - cron: "42 14 * * *"
+    # Un solo intento diario.
+    # 09:40 NY = 14:40 UTC (aprox, ajusta si quieres un poco antes o después)
+    - cron: "40 14 * * *"
   workflow_dispatch: {}
-
-# Evita ejecuciones solapadas entre crones y lanzamientos manuales
-concurrency:
-  group: kicker-daily
-  cancel-in-progress: true
 
 permissions:
   contents: write   # necesario para commitear resultados al repo
 
+concurrency:
+  group: kicker-daily
+  cancel-in-progress: true
+
 jobs:
   run:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout (historia completa para poder rebasear)
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          persist-credentials: true
+    env:
+      # Config para detector.py
+      USE_PREPOST: "true"              # Intenta prepost=true
+      FALLBACK_QUASI_KICKER: "true"    # Si no hay pre/post, usa 09:30
+      UNIVERSE_MAX: "350"              # Limitar universo para no pasarnos de los ~800/día
+      MAX_PER_MINUTE: "0"              # 0 = desactivar límite por minuto (lo controla Twelve Data)
+      MAX_PER_DAY: "780"               # Seguridad para no sobrepasar el límite diario
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Install deps
-        run: pip install -r requirements.txt
+      - run: pip install -r requirements.txt
 
-      - name: Ejecutar detector (intenta premarket y cae a quasi-kicker si el plan no lo permite)
+      - name: Ejecutar detector
         env:
           TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}
-
-          # --- Estrategia solicitada ---
-          # 1) INTENTAR pre/post-market (aunque el plan sea Basic)
-          #    El detector añadirá prepost=true y, si el plan no lo permite,
-          #    devolverá "no_premarket_plan".
-          USE_PREPOST: "true"
-
-          # 2) Si falla por plan, ACTIVAR fallback 09:30 (quasi-kicker)
-          FALLBACK_QUASI_KICKER: "true"
-
-          # --- Límites y universo (para no romper la cuota de Basic) ---
-          # 8/min y 800/día aprox en Basic => 2 requests por ticker
-          UNIVERSE_MAX: "350"   # ~700 créditos/día (ajusta a tu gusto)
-          MAX_PER_MINUTE: "7"   # margen por debajo del tope de 8/min
-          MAX_PER_DAY: "780"    # margen por debajo del tope diario
+          # Hereda también las env definidas en jobs.run.env (USE_PREPOST, etc.)
         run: python detector.py
 
-      - name: Commit y push de results (con rebase y reintentos)
+      - name: Commit y push de results
         run: |
-          set -e
-
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Añade tanto el JSON del día como los diagnostics, si existen
-          git add results/*.json results/*.jsonl 2>/dev/null || true
+          git add results/*.json results/diagnostics-*.jsonl || true
 
-          # Si no hay cambios, salir silenciosamente
-          if git diff --cached --quiet; then
-            echo "No hay cambios para commitear."
-            exit 0
-          fi
+          # Evita commits vacíos
+          git diff --cached --quiet || git commit -m "Resultados Kicker $(date -u +'%Y-%m-%dT%H:%MZ')"
 
-          git commit -m "Resultados Kicker $(date -u +'%Y-%m-%dT%H:%MZ')"
-
-          # Reintentos con pull --rebase para evitar 'fetch first'
-          n=0
-          until [ $n -ge 3 ]
-          do
-            git pull --rebase origin main || true
-            if git push origin HEAD:main; then
-              echo "Push OK en intento $((n+1))."
-              break
-            fi
-            n=$((n+1))
-            echo "Push falló (intento $n). Reintentando en 3s…"
-            sleep 3
-          done
-
-          if [ $n -ge 3 ]; then
-            echo "❌ No se pudo pushear tras 3 intentos."
-            exit 1
-          fi
+          # Rebase para evitar el error de "fetch first"
+          git pull --rebase origin main || true
+          git push origin main || true
