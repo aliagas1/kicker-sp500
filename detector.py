@@ -2,7 +2,8 @@
 # - Intenta PRE/POST (prepost=true) si USE_PREPOST=true
 # - Si el plan no lo permite o falta la 09:29 exacta y FALLBACK_QUASI_KICKER=true,
 #   usa la vela 09:30 (primera de sesión regular) como "quasi-kicker".
-# - Controla cuotas con MAX_PER_MINUTE / MAX_PER_DAY y recorta universo con UNIVERSE_MAX.
+# - Controla cuotas con MAX_PER_DAY y opcionalmente MAX_PER_MINUTE.
+#   Si MAX_PER_MINUTE=0, NO limita por minuto (solo por día).
 
 import os, json, time
 from collections import deque
@@ -38,8 +39,8 @@ FALLBACK_QUASI_KICKER = _env_bool("FALLBACK_QUASI_KICKER", "false")
 UNIVERSE_MAX = os.getenv("UNIVERSE_MAX")  # puede ser None o str con número
 UNIVERSE_MAX = int(UNIVERSE_MAX) if UNIVERSE_MAX and UNIVERSE_MAX.isdigit() else None
 
-MAX_PER_MINUTE = int(os.getenv("MAX_PER_MINUTE", "7"))  # Basic ~8/min
-MAX_PER_DAY    = int(os.getenv("MAX_PER_DAY", "780"))   # Basic ~800/day
+MAX_PER_MINUTE = int(os.getenv("MAX_PER_MINUTE", "0"))   # 0 = sin límite por minuto
+MAX_PER_DAY    = int(os.getenv("MAX_PER_DAY", "780"))    # Basic ~800/día
 # ======================================================
 
 # ===================== RATE LIMITER ===================
@@ -47,13 +48,19 @@ _req_times_minute = deque()  # timestamps últimos 60s
 _req_count_day = 0           # contador del día de ejecución (job)
 
 def _rate_limit_block():
-    """Bloquea hasta que haya cupo por minuto y por día."""
+    """Bloquea hasta que haya cupo por día y, opcionalmente, por minuto."""
     global _req_count_day
+
     # Límite diario
     if _req_count_day >= MAX_PER_DAY:
         raise RuntimeError(f"daily_limit_reached:{_req_count_day}/{MAX_PER_DAY}")
 
-    # Límite por minuto
+    # Si MAX_PER_MINUTE <= 0, NO aplicamos límite por minuto.
+    if MAX_PER_MINUTE <= 0:
+        _req_count_day += 1
+        return
+
+    # Límite por minuto (solo si MAX_PER_MINUTE > 0)
     now = time.time()
     # limpia timestamps > 60s
     while _req_times_minute and now - _req_times_minute[0] > 60.0:
@@ -88,7 +95,6 @@ def load_universe(path: str) -> pd.DataFrame:
     col_ticker = _find_ticker_column(df)
     df = df.dropna(subset=[col_ticker])
 
-    # CORRECCIÓN: usar .str.strip() (no .strip()) y normalizar a mayúsculas.
     df["ticker_td"] = (
         df[col_ticker]
         .astype(str)
@@ -135,7 +141,6 @@ def td_time_series(symbol: str, interval: str, outputsize: int, api_key: str, *,
 def _is_prepost_plan_error(msg: str | None) -> bool:
     if not msg:
         return False
-    # Mensaje típico de Twelve Data para planes sin pre/post
     return "Pre/post data is available on Pro+ plans" in msg or "pre/post" in msg.lower()
 
 def _extract_api_message(payload: dict) -> str:
@@ -175,7 +180,6 @@ def get_prev_daily(symbol: str, api_key: str):
         return None, f"daily_parse_error:{e}"
 
 def _pick_candle(vals: list, target_time: str) -> dict | None:
-    """Busca vela EXACTA 'YYYY-MM-DD HH:MM:SS' en el día NY actual."""
     today_str = ny_today().isoformat()
     for v in vals:
         dt = v.get("datetime", "")
@@ -186,7 +190,6 @@ def _pick_candle(vals: list, target_time: str) -> dict | None:
     return None
 
 def get_premarket_0929(symbol: str, api_key: str):
-    """Intenta obtener 09:29:00 con prepost=true (pre-market real)."""
     data = td_time_series(symbol, INTRADAY_INTERVAL, INTRADAY_OUTPUTSIZE, api_key, prepost=True)
     if data.get("status") != "ok" or "values" not in data:
         msg = _extract_api_message(data)
@@ -212,7 +215,6 @@ def get_premarket_0929(symbol: str, api_key: str):
         return None, f"intraday_parse_error:{e}"
 
 def get_open_0930(symbol: str, api_key: str):
-    """Obtiene la vela 09:30:00 sin prepost (primera vela regular)."""
     data = td_time_series(symbol, INTRADAY_INTERVAL, INTRADAY_OUTPUTSIZE, api_key, prepost=False)
     if data.get("status") != "ok" or "values" not in data:
         return None, _extract_api_message(data)
@@ -235,12 +237,6 @@ def get_open_0930(symbol: str, api_key: str):
         return None, f"intraday_parse_error:{e}"
 
 def detect_kicker(prev: dict, intra_candle: dict) -> str | None:
-    """
-    Señal mínima:
-    - Bullish: gap alcista >= 0.5% y vela verde
-    - Bearish: gap bajista >= 0.5% y vela roja
-    La vela de referencia puede ser premarket 09:29 (profesional) o 09:30 (quasi-kicker).
-    """
     if not prev or not intra_candle:
         return None
 
@@ -281,7 +277,6 @@ def main():
 
     for t in tickers:
         try:
-            # 1) Cierre previo (diario)
             prev, daily_err = get_prev_daily(t, API_KEY)
             if not prev:
                 diagnostics.append({"ticker": t, "signal": None, "reason": "no_prev_daily", "api_error": daily_err})
@@ -291,18 +286,14 @@ def main():
             intra_err = None
             used_fallback = False
 
-            # 2) Intento pre-market 09:29 si USE_PREPOST
             if USE_PREPOST:
                 intra, intra_err = get_premarket_0929(t, API_KEY)
-
-                # 2.a) Si no hay permiso o falta 09:29 → fallback 09:30 (si está permitido)
                 if (intra is None and FALLBACK_QUASI_KICKER and (intra_err in ("no_premarket_plan", "no_premarket_0929"))):
                     intra, intra_err = get_open_0930(t, API_KEY)
                     if intra:
                         used_fallback = True
                         used_fallback_count += 1
 
-            # 3) Si no usamos prepost o falló y no hay fallback aún, intenta quasi-kicker directo si procede
             if intra is None and not USE_PREPOST and FALLBACK_QUASI_KICKER:
                 intra, intra_err = get_open_0930(t, API_KEY)
                 if intra:
@@ -329,7 +320,7 @@ def main():
                 "intra_open": intra["Open"],
                 "intra_close": intra["Close"],
                 "intra_time": intra.get("Time"),
-                "intra_type": intra.get("Type"),  # premarket_0929 o regular_0930
+                "intra_type": intra.get("Type"),
                 "used_fallback": used_fallback
             })
 
@@ -338,10 +329,13 @@ def main():
             diagnostics.append({"ticker": t, "signal": None, "reason": f"error:{e}"})
             print(f"[{t}] error: {e}")
 
+    bullish_list = sorted(bullish_list)
+    bearish_list = sorted(bearish_list)
+
     out = {
         "date": ny_date_str,
-        "bullish": sorted(bullish_list),
-        "bearish": sorted(bearish_list),
+        "bullish": bullish_list,
+        "bearish": bearish_list,
         "meta": {
             "provider": "twelvedata",
             "ny_date": ny_date_str,
@@ -364,23 +358,21 @@ def main():
             },
             "local_log_date": today_str_local,
             "local_tz": LOCAL_TZ
+        },
+        "counts": {
+            "bullish": len(bullish_list),
+            "bearish": len(bearish_list),
+            "universe": len(tickers),
+            "checked": checked,
+            "skipped_missing_intra": too_early_or_missing,
+            "errors": errors
         }
-    }
-
-    out["counts"] = {
-        "bullish": len(bullish_list),
-        "bearish": len(bearish_list),
-        "universe": len(tickers),
-        "checked": checked,
-        "skipped_missing_intra": too_early_or_missing,
-        "errors": errors
     }
 
     out_path = os.path.join(SAVE_DIR, f"{ny_date_str}.json")
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(out, f, indent=2, ensure_ascii=False)
 
-    # Diagnostics por día (JSON Lines)
     try:
         diag_path = os.path.join(SAVE_DIR, f"diagnostics-{ny_date_str}.jsonl")
         with open(diag_path, "w", encoding="utf-8") as fd:
