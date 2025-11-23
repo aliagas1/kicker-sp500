@@ -1,0 +1,32 @@
+{
+  "date": "2025-11-23",
+  "bullish": [],
+  "bearish": [],
+  "meta": {
+    "provider": "twelvedata",
+    "ny_date": "2025-11-23",
+    "universe_size": 346,
+    "checked": 0,
+    "skipped_missing_intra": 4,
+    "errors": 0,
+    "note": "Detección con cierre del día anterior y vela intradía: 09:29 NY (pre-market) si disponible; si el plan no lo permite o falta, se usa fallback 09:30 NY (quasi-kicker) si está habilitado.",
+    "used_fallback_count": 0,
+    "config": {
+      "USE_PREPOST": true,
+      "FALLBACK_QUASI_KICKER": true,
+      "UNIVERSE_MAX": 350,
+      "MAX_PER_MINUTE": 0,
+      "MAX_PER_DAY": 780
+    },
+    "local_log_date": "2025-11-23",
+    "local_tz": "America/Lima"
+  },
+  "counts": {
+    "bullish": 0,
+    "bearish": 0,
+    "universe": 346,
+    "checked": 0,
+    "skipped_missing_intra": 4,
+    "errors": 0
+  }
+}
