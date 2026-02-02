@@ -1,0 +1,34 @@
+{
+  "date": "2026-02-02",
+  "bullish": [],
+  "bearish": [
+    "OKE"
+  ],
+  "meta": {
+    "provider": "twelvedata",
+    "ny_date": "2026-02-02",
+    "universe_size": 346,
+    "checked": 8,
+    "skipped_missing_intra": 0,
+    "errors": 0,
+    "note": "Detección con cierre del día anterior y vela intradía: 09:29 NY (pre-market) si disponible; si el plan no lo permite o falta, se usa fallback 09:30 NY (quasi-kicker) si está habilitado.",
+    "used_fallback_count": 8,
+    "config": {
+      "USE_PREPOST": true,
+      "FALLBACK_QUASI_KICKER": true,
+      "UNIVERSE_MAX": 350,
+      "MAX_PER_MINUTE": 0,
+      "MAX_PER_DAY": 780
+    },
+    "local_log_date": "2026-02-02",
+    "local_tz": "America/Lima"
+  },
+  "counts": {
+    "bullish": 0,
+    "bearish": 1,
+    "universe": 346,
+    "checked": 8,
+    "skipped_missing_intra": 0,
+    "errors": 0
+  }
+}
